@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Pablo Villagrán González — Portafolio</title>
+  <meta name="description" content="Portafolio de Pablo Villagrán González — Desarrollador Backend especializado en Java, Spring Boot y Flutter.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/foto.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pablo Villagrán — Desarrollador Full-Stack">
+  <meta property="og:description" content="Portfolio profesional con proyectos Flutter y Spring Boot.">
+ <meta property="og:image" content="https://pablovillagrangonz.github.io/assets/img/preview.png">
+<meta property="og:url" content="https://pablovillagrangonz.github.io/">
+<link rel="canonical" href="https://pablovillagrangonz.github.io/">
+  <meta property="og:site_name" content="Pablo Villagrán Portfolio">
+
+</head>
+<body>
+  <!-- NAV -->
+<header class="header">
+  <div class="wrap nav">
+    <div class="brand">Pablo Villagrán González</div>
+
+    <nav class="nav-links" aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="cta"><a href="#contacto" class="btn">Contactar</a></div>
+
+    <!-- Toggle tema -->
+    <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-left">
+      <h1>Hola, soy <span class="accent">Pablo Villagrán González</span></h1>
+      <p class="lead"><strong>Desarrollador Backend</strong> · Java · Spring Boot · Flutter · Android · HTML · MySQL · SQLite · MongoDB · Python</p>
+      <div class="actions">
+        <a class="btn-outline" href="#proyectos">Ver proyectos</a>
+    <a class="btn"
+      href="assets/archivos/pablo.pdf"
+      target="_blank"
+      rel="noopener noreferrer">
+      Ver CV
+    </a>      
+  </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="card-photo">
+        <img class="avatar" src="assets/img/foto.png" loading="lazy" alt="Foto de Pablo Villagrán González">
+      </div>
+    </div>
+  </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+
+      <p class="muted">
+        Soy desarrollador backend especializado en Java y Spring Boot, con experiencia en diseño de APIs REST,
+        bases de datos SQL, autenticación segura y desarrollo multiplataforma con Flutter. Me gusta crear soluciones limpias,
+        escalables y fáciles de mantener.
+      </p>
+
+      <p class="muted">
+        Me considero una persona constante, responsable y con ganas de seguir creciendo.
+        Disfruto aprendiendo nuevas tecnologías, optimizando accesos a datos y aplicando buenas prácticas para mejorar
+        la calidad del software.
+      </p>
+
+      <p class="muted">
+        A lo largo de mis proyectos —desde aplicaciones multiplataforma hasta páginas web completas—
+        he desarrollado una mentalidad orientada a resultados, manteniendo siempre un enfoque estructurado,
+        claro y escalable. Me interesa especialmente la arquitectura de software, los patrones de diseño y
+        el desarrollo de herramientas que aporten valor real.
+      </p>
+
+      <p class="muted">
+        Actualmente sigo ampliando mis conocimientos mientras desarrollo proyectos propios con el objetivo
+        de mejorar como profesional y aportar soluciones sólidas y bien diseñadas.
+      </p>
+    </section>
+
+    <!-- PROYECTOS -->
+
+<section id="proyectos" class="section projects-section">
+  <h2>Proyectos</h2>
+
+  <div class="projects-list">
+      
+  <!-- === Proyecto: CentrosNet === -->
+  <article class="project-card">
+    <div class="project-media">
+      <img src="assets/img/centrosnet/gestor.jpg"
+          loading="lazy"
+          alt="CentrosNet — Panel de gestión académica" />
+    </div>
+
+      <div class="project-body">
+        <div class="project-header">
+          <h3>CentrosNet — Plataforma de Gestión Académica</h3>
+          <p class="muted small">
+            Aplicación <strong>full-stack</strong> para centros educativos con Flutter y Spring Boot.
+          </p>
+        </div>
+
+        <p class="project-desc">
+          CentrosNet simula un entorno real de conservatorio o centro educativo, con
+          <strong>control de roles (administrador, profesor y alumno)</strong>,
+          gestión automática de cursos y horarios, y un
+          <strong>sistema de mensajería interna</strong>.
+          Backend seguro con API REST y autenticación JWT.
+        </p>
+
+        <div class="project-meta">
+          <div class="tags-inline">
+            <span class="tech-pill tech-flutter">Flutter</span>
+            <span class="tech-pill tech-dart">Dart</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT</span>
+            <span class="tech-pill tech-rest">REST API</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="btn-repo"
+              href="https://github.com/PabloVillagranGonz/CentrosNetApi.git"
+              rel="noopener noreferrer">
+              Repositorio
+            </a>
+            <a class="btn-primary"
+              href="projects/centrosNet.html"
+              target="_blank" rel="noopener noreferrer">
+              Leer más
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- === Proyecto: La Liga === -->
+    <article class="project-card">
+      <div class="project-media">
+        <img src="assets/img/laliga/liga.JPG" loading="lazy" alt="Screenshot La Liga" />
+      </div>
+
+      <div class="project-body">
+        <div class="project-header">
+          <h3>La Liga — Página web para grupo de música</h3>
+          <p class="muted small">Sitio web estático en HTML/CSS con formulario integrado por EmailJS y galería responsive.</p>
+        </div>
+
+        <p class="project-desc">
+          Web con secciones de inicio, biografía, calendario, galería y contacto. Diseño responsive, optimización SEO básica y formulario funcional con EmailJS para envío sin backend.
+        </p>
+
+        <div class="project-meta">
+          <div class="tags-inline">
+            <span class="tech-pill tech-html">HTML</span>
+            <span class="tech-pill tech-css">CSS</span>
+            <span class="tech-pill tech-emailjs">EmailJS</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="btn-repo" href="https://github.com/PabloVillagranGonz/La-Liga" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a class="btn-web" href="https://pablovillagrangonz.github.io/La-Liga/" target="_blank" rel="noopener noreferrer">Sitio web</a>
+            <a class="btn-primary" href="projects/ligaweb.html" target="_blank" rel="noopener noreferrer">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="section experience-timeline" aria-labelledby="experiencia-title">
+    <h2 id="experiencia-title">Experiencia & Formación</h2>
+    <div class="timeline">
+
+      <!-- Formación: DAM -->
+      <div class="timeline-item">
+        <div class="dot" aria-hidden="true"></div>
+        <div class="card">
+          <h3>Grado Superior — Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+          <p class="muted">IES Ribera de Castilla · 09/2023 – 06/2025</p>
+          <p class="muted">
+            Formación técnica en programación, bases de datos, APIs, desarrollo móvil, arquitectura y metodologías ágiles.
+          </p>
+        </div>
+      </div>
+
+            <!-- Practicas tienda informatica -->
+      <div class="timeline-item">
+        <div class="dot" aria-hidden="true"></div>
+        <div class="card">
+          <h3>Técnico Informático (Prácticas)</h3>
+          <p class="muted small">3 meses · Soporte en tienda</p>
+          <p class="muted">
+            Montaje y reparación de ordenadores, mantenimiento de software y hardware, sustitución de pantallas y componentes móviles,
+            y atención/soporte técnico a clientes. Mejora en diagnóstico y resolución de incidencias.
+          </p>
+        </div>
+      </div>
+
+      <!-- Formación: SMR -->
+      <div class="timeline-item">
+        <div class="dot" aria-hidden="true"></div>
+        <div class="card">
+          <h3>Grado Medio — Sistemas Microinformáticos y Redes (SMR)</h3>
+          <p class="muted">IES Ribera de Castilla · 09/2021 – 06/2023</p>
+          <p class="muted">
+            Conocimientos en hardware, redes, sistemas operativos, mantenimiento y soporte técnico.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Operario -->
+      <div class="timeline-item">
+        <div class="dot" aria-hidden="true"></div>
+        <div class="card">
+          <h3>Operario de Producción</h3>
+          <p class="muted small">4 meses</p>
+          <p class="muted">
+            Trabajo en equipo, gestión de tiempos y adaptación a entornos exigentes. Experiencia que refuerza responsabilidad y constancia.
+          </p>
+        </div>
+      </div>
+
+      <!-- Conservatorio -->
+      <div class="timeline-item">
+        <div class="dot" aria-hidden="true"></div>
+        <div class="card">
+          <h3>Estudios profesionales de Música — Conservatorio de Valladolid</h3>
+          <p class="muted">Especialidad en trombón</p>
+          <p class="muted">
+            Formación musical (trombón). Disciplina y constancia aplicadas también al desarrollo de software.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact-section">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="form" aria-label="Formulario de contacto" novalidate>
+          <label for="cf-name">Nombre</label>
+          <input id="cf-name" name="from_name" placeholder="Tu nombre" required autocomplete="name">
+
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="from_email" type="email" placeholder="correo@ejemplo.com" required autocomplete="email">
+
+          <label for="cf-message">Mensaje</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+          <!-- Honeypot (campo oculto para bots) -->
+          <label style="display:none">No rellenar</label>
+          <input type="text" name="phone" style="display:none" autocomplete="off" tabindex="-1" />
+
+          <button class="btn" id="cf-send" type="submit">Enviar mensaje</button>
+
+          <p id="cf-status" aria-live="polite" style="margin-top:10px;color:var(--muted)"></p>
+        </form>
+
+        <aside class="contact-info card">
+          <p class="muted">Otras formas de contacto</p>
+          <p>📧 <a id="email-link" href="mailto:pablovillagrangonz@gmail.com">pablovillagrangonz@gmail.com</a></p>
+          <p>🔗 <a id="linkedin-link" href="https://www.linkedin.com/in/pablo-villagrán-gonzález-98b4683a1" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a id="github-link" href="https://github.com/PabloVillagranGonz" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          <p class="muted">Puedes descargar mi CV o escribirme directamente.</p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© Pablo Villagrán González.</p>
+    </footer>
+  </main>
+
+  <script>
+  const email = 'pablovillagrangonz@gmail.com';
+  document.getElementById('email-link').textContent = email;
+  document.getElementById('email-link').href = 'mailto:' + email;
+
+  document.getElementById('linkedin-link').href = 'https://www.linkedin.com/in/pablo-villagrán-gonzález-98b4683a1';
+  document.getElementById('github-link').href = 'https://github.com/PabloVillagranGonz';
+
+  document.getElementById('linkedin-link').target = '_blank';
+  document.getElementById('linkedin-link').rel = 'noopener noreferrer';
+  document.getElementById('github-link').target = '_blank';
+  document.getElementById('github-link').rel = 'noopener noreferrer';
+</script>
+
+    <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- Tu script separado -->
+  <script src="assets/emailJS/email.js"></script>
+
+  <!-- reveal + theme toggle -->
+  <script src="assets/js/scroll-reveal.js"></script>
+  <script src="assets/js/theme-toggle.js"></script> 
+
+  <script>
+  (function () {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle menú
+    function toggleMenu() {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    // Cerrar al clicar en un link (útil en móvil)
+    function closeMenu() {
+      if (navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    // Click fuera -> cerrar
+    function onDocClick(e) {
+      if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    }
+
+    // Listeners
+    menuToggle?.addEventListener('click', toggleMenu);
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('click', onDocClick);
+
+    // Optional: tecla ESC para cerrar
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+</script>
+
+
+</body>
+</html>

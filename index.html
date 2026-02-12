@@ -36,7 +36,7 @@
     <nav class="nav-links" aria-label="Menú principal">
       <a href="#inicio">Inicio</a>
       <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
+      <a href="#proyectos">Proyectos</a> 
       <a href="#experiencia">Experiencia</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -45,7 +45,28 @@
 
     <!-- Toggle tema -->
     <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+
+    <!-- Hamburger Menu Toggle (móvil) -->
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a> 
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+    <a href="assets/archivos/pablo.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
 </header>
 
 <main class="wrap">
@@ -298,6 +319,16 @@
     </footer>
   </main>
 
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- Tu script separado -->
+  <script src="assets/emailJS/email.js"></script>
+
+  <!-- Mobile Menu + Scroll Animations -->
+  <script src="assets/js/mobile-menu.js"></script>
+  <!-- Theme Toggle -->
+  <script src="assets/js/theme-toggle.js"></script> 
+
   <script>
   const email = 'pablovillagrangonz@gmail.com';
   document.getElementById('email-link').textContent = email;
@@ -310,53 +341,6 @@
   document.getElementById('linkedin-link').rel = 'noopener noreferrer';
   document.getElementById('github-link').target = '_blank';
   document.getElementById('github-link').rel = 'noopener noreferrer';
-</script>
-
-    <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <!-- Tu script separado -->
-  <script src="assets/emailJS/email.js"></script>
-
-  <!-- reveal + theme toggle -->
-  <script src="assets/js/scroll-reveal.js"></script>
-  <script src="assets/js/theme-toggle.js"></script> 
-
-  <script>
-  (function () {
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    // Toggle menú
-    function toggleMenu() {
-      const isOpen = navLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-    }
-
-    // Cerrar al clicar en un link (útil en móvil)
-    function closeMenu() {
-      if (navLinks.classList.contains('open')) {
-        navLinks.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      }
-    }
-
-    // Click fuera -> cerrar
-    function onDocClick(e) {
-      if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-        closeMenu();
-      }
-    }
-
-    // Listeners
-    menuToggle?.addEventListener('click', toggleMenu);
-    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMenu));
-    document.addEventListener('click', onDocClick);
-
-    // Optional: tecla ESC para cerrar
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-  })();
 </script>
 
 

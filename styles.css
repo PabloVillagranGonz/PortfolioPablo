@@ -64,6 +64,10 @@ body {
    Header fijo, fondo sólido, enlaces siempre visibles.
    Evita que se oculten en ciertas resoluciones.
    ========= */
+/* ========= HEADER / NAVBAR =========
+   Header fijo, fondo sólido, enlaces siempre visibles.
+   Evita que se oculten en ciertas resoluciones.
+   ========= */
 .header {
   position: sticky;
   top: 0;
@@ -73,7 +77,11 @@ body {
   border-bottom: 1px solid var(--border);
   box-shadow: 0 6px 24px rgba(2,6,23,0.06);
   padding: 8px 0;
-  transition: background .18s ease, box-shadow .18s ease;
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1), background .18s ease, box-shadow .18s ease;
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 .wrap.header { position: relative; padding-top: 0; padding-bottom: 0; }
@@ -128,23 +136,158 @@ body {
 /* CTA (Contactar) siempre visible */
 .cta { margin-left: auto; display: block !important; }
 
-/* Ocultar el toggle hamburguesa (no lo necesitamos si el nav hace wrap) */
-.menu-toggle { display: none !important; pointer-events: none; }
+/* Ocultar el toggle hamburguesa por defecto (solo móvil) */
+.nav-toggle { display: none !important; pointer-events: none; }
+.side-menu { display: none; }
+.overlay { display: none; }
 
-/* Evita que el nav se oculte por media queries: forzamos visibilidad */
-@media (max-width: 900px) {
-  .nav { gap: 10px; align-items: center; }
-  .brand { flex: 0 0 100%; } /* marca en su propia línea si necesario */
-  .nav-links { gap: 8px; }
-  .nav-links a { font-size: 15px !important; padding: 6px 8px !important; }
-  .cta { width: 100%; display: block; margin-top: 6px; }
+/* ========= MENÚ HAMBURGUESA (MÓVIL) ========= */
+@media (max-width: 768px) {
+  /* Mostrar hamburguesa en móvil */
+  .nav-toggle {
+    display: flex !important;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: all;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    display: block;
+  }
+
+  /* Animación hamburguesa → X */
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+  }
+
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Ocultar nav-links en móvil */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* Ocultar CTA en móvil */
+  .cta {
+    display: none !important;
+  }
+
+  /* Overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Side Menu */
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--card);
+    border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding: 20px;
+    gap: 16px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: right 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+  }
+
+  .side-menu.active {
+    right: 0;
+  }
+
+  .side-menu a {
+    display: block;
+    padding: 14px 16px;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .side-menu a:hover {
+    background: var(--bg-2);
+    color: var(--accent);
+  }
+
+  .close-menu {
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-bottom: 12px;
+  }
+
+  .close-menu:hover {
+    transform: scale(1.15);
+  }
+
+  /* Prevenir scroll cuando el menú está abierto */
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
-/* Muy estrecho: permitir scroll horizontal en nav (evita solapamientos) */
-@media (max-width: 480px) {
-  .nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .nav-links { flex-wrap: nowrap; gap: 10px; }
-  .nav-links a { white-space: nowrap; }
+/* Evita que el nav se oculte por media queries: forzamos visibilidad */
+@media (min-width: 769px) {
+  .nav-toggle { display: none !important; }
+  .side-menu { display: none !important; }
+  .overlay { display: none !important; }
 }
 
 /* Ajuste para que main no se solape con el header */

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AulasFree — Sistema Inteligente de Gestión de Aulas — Pablo Villagrán</title>
+
+  <meta name="description"
+    content="AulasFree — Sistema inteligente de gestión de aulas desarrollado con Flutter y Spring Boot. Control en tiempo real, reservas y estadísticas.">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!-- Estilos específicos de páginas de proyecto -->
+  <link rel="stylesheet" href="../project-detail.css">
+
+  <script src="../../assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+  <main class="wrap" role="main">
+
+    <!-- HERO -->
+    <section class="detail-hero" role="article" aria-labelledby="aulasfree-title">
+      <div class="hero-row">
+        <div>
+          <div class="hero-media">
+            <img src="../../assets/img/aulasfree/portada.jpg" alt="AulasFree — Panel de gestión de aulas"
+              loading="lazy">
+          </div>
+        </div>
+
+        <aside class="hero-cta">
+          <div style="text-align:right">
+            <h1 id="aulasfree-title" style="margin:0 0 8px">AulasFree</h1>
+            <p class="muted small" style="margin:0 0 12px">
+              Sistema Inteligente de Gestión de Aulas — Flutter · Spring Boot · MySQL
+            </p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:10px;width:100%">
+            <a class="btn-repo" href="https://github.com/PabloVillagranGonz/Aulas-Free" target="_blank"
+              rel="noopener noreferrer" aria-label="Repositorio AulasFree">
+              Ver repositorio
+            </a>
+
+            <a class="btn-web" href="https://pablovillagrangonz.github.io/Aulas-Free/" target="_blank"
+              rel="noopener noreferrer" aria-label="Ver sitio web AulasFree">
+              Ver sitio web
+            </a>
+
+            <a class="btn-primary" href="../../index.html" style="text-align:center" aria-label="Volver al portfolio">
+              Volver al portfolio
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- GRID DE CONTENIDO -->
+      <div class="detail-grid">
+
+        <!-- Columna izquierda -->
+        <div class="detail-section">
+
+          <h2>Descripción general</h2>
+          <p class="muted">
+            <strong>AulasFree</strong> es una aplicación desarrollada para la gestión digital
+            de aulas en un conservatorio. Permite a secretaría controlar en tiempo real
+            la ocupación de espacios, gestionar reservas de alumnos y consultar el historial completo de uso.
+          </p>
+
+          <p class="muted">
+            El sistema está construido con una arquitectura moderna basada en:
+          </p>
+
+          <div class="tech-list" style="margin-top:8px">
+            <span class="tech-pill tech-flutter">Flutter</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT Ready</span>
+            <span class="tech-pill tech-rest">REST API</span>
+          </div>
+
+          <h3>Funcionalidades principales</h3>
+
+          <h4>Gestión en tiempo real</h4>
+          <ul class="muted">
+            <li>Visualización del estado de todas las aulas.</li>
+            <li>Indicadores claros de disponibilidad y ocupación.</li>
+            <li>Información detallada de cada reserva activa.</li>
+          </ul>
+
+          <h4>Control automático</h4>
+          <ul class="muted">
+            <li>Cierre automático de reservas vencidas mediante tareas programadas (@Scheduled).</li>
+            <li>Actualización automática del estado del aula en backend.</li>
+            <li>Barra de progreso y cuenta atrás sincronizada en tiempo real.</li>
+          </ul>
+
+          <h4>Validaciones y control de reglas de negocio</h4>
+          <ul class="muted">
+            <li>Restricción de una única reserva activa por alumno.</li>
+            <li>Control de duración máxima permitida.</li>
+            <li>Gestión estructurada de errores con códigos HTTP adecuados (409, 400…).</li>
+          </ul>
+
+          <h4>Historial y trazabilidad</h4>
+          <ul class="muted">
+            <li>Registro persistente de todas las reservas.</li>
+            <li>Filtros por alumno, fecha y año.</li>
+            <li>Estructura preparada para generación de estadísticas avanzadas.</li>
+          </ul>
+
+
+          <!-- GALERÍA SECRETARÍA -->
+          <h3>Galería — Vista Secretaría</h3>
+          <p class="muted">
+            Interfaz de secretaría: gestión en tiempo real del estado de aulas,
+            creación de reservas para alumnos y control de reservas activas con cuenta atrás.
+          </p>
+
+          <div class="gallery gallery-secretaria">
+            <img src="../../assets/img/aulasfree/admin_ve.png" alt="Secretaría — Panel principal con estado de aulas"
+              loading="lazy" width="1600">
+
+            <img src="../../assets/img/aulasfree/admin_reserva.png" alt="Secretaría — Creando reserva para un alumno"
+              loading="lazy" width="1600">
+
+            <img src="../../assets/img/aulasfree/admin_vereserva.png"
+              alt="Secretaría — Reserva activa con cuenta atrás y opción de finalizar" loading="lazy" width="1600">
+          </div>
+
+          <!-- GALERÍA ALUMNO -->
+          <h3>Galería — Vista Alumno</h3>
+          <p class="muted">
+            Interfaz del alumno: consulta en solo lectura del estado de las aulas.
+            Puede ver la disponibilidad y ocupación, pero no puede crear ni eliminar reservas.
+          </p>
+
+          <div class="gallery gallery-alumno">
+            <img src="../../assets/img/aulasfree/usuario_ve_reserva.png"
+              alt="Alumno — Consulta de estado de aulas (solo lectura)" loading="lazy" width="1600">
+          </div>
+
+        </div>
+
+        <!-- Columna derecha -->
+        <aside class="panel card" style="padding:18px">
+
+          <h3>Tecnologías & rol</h3>
+          <p class="muted">
+            Rol: Diseño de arquitectura, desarrollo backend con Spring Boot
+            y desarrollo frontend con Flutter.
+          </p>
+
+          <div class="tech-list" style="margin-top:8px">
+            <span class="tech-pill tech-flutter">Flutter</span>
+            <span class="tech-pill tech-java">Java</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+          </div>
+
+          <h3 style="margin-top:14px">Fecha</h3>
+          <p class="muted">2025</p>
+
+          <h3 style="margin-top:12px">Notas técnicas</h3>
+          <p class="muted">
+            Proyecto preparado para escalar con autenticación JWT,
+            control de roles y despliegue multiplataforma.
+          </p>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" aria-label="Anterior">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="../../assets/js/lightbox.js"></script>
+</body>
+
+</html>

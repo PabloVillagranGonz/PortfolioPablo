@@ -509,6 +509,13 @@ h2 { margin: 0 0 18px; font-size: 22px; }
 .tech-flutter { background: #02569b; color: #fff; border-color: rgba(2,86,155,0.18); }
 .tech-dart    { background: #00B4AB; color: #fff; border-color: rgba(0,180,171,0.18); }
 .tech-sqlite  { background: #003b57; color: #fff; border-color: rgba(0,59,87,0.18); }
+
+/* Otros lenguajes */
+.tech-python  { background: #3776ab; color: #fff; border-color: rgba(55,118,171,0.18); }
+.tech-android { background: #3ddc84; color: #111; border-color: rgba(61,220,132,0.18); }
+.tech-angular { background: #dd0031; color: #fff; border-color: rgba(221,0,49,0.18); }
+.tech-mongodb { background: #47a248; color: #fff; border-color: rgba(71,162,72,0.18); }
+
 /* servicios */
 .tech-provider { background: #00a98f; color: #fff; border-color: rgba(0,169,143,0.18); }
 .tech-bcrypt   { background: #4b5563; color: #fff; border-color: rgba(75,85,99,0.18); }

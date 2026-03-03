@@ -1,6 +1,6 @@
 /* ============================================================
-   CENTROSNET — Página de proyecto
-   Limpio, coherente con Liga y mantenible
+   PROJECT DETAIL — Página de detalle de proyectos
+   Diseño unificado para todo el portfolio
 =========================================================== */
 
 
@@ -45,6 +45,7 @@ html[data-theme="dark"] .detail-hero{
   height:auto;
   display:block;
   object-fit:cover;
+  transition:transform .3s ease;
 }
 
 .hero-media img:hover{
@@ -94,7 +95,7 @@ html[data-theme="dark"] .detail-hero{
 
 .detail-section h3{
   font-size:20px;
-  margin-top:12px;
+  margin-top:18px;
 }
 
 .detail-section p,
@@ -102,9 +103,13 @@ html[data-theme="dark"] .detail-hero{
   line-height:1.6;
 }
 
+.muted{
+  color:var(--muted);
+}
+
 
 /* ============================
-   TECH PILLS (COLORES REALES)
+   TECH PILLS
 ============================ */
 
 .tech-pill{
@@ -120,7 +125,8 @@ html[data-theme="dark"] .detail-hero{
   box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* Stack CentrosNet */
+
+/* Colores comunes del stack */
 
 .tech-flutter{ background:#02569b; color:#fff; }
 .tech-dart{ background:#00B4AB; color:#fff; }
@@ -129,6 +135,12 @@ html[data-theme="dark"] .detail-hero{
 .tech-mysql{ background:#00618a; color:#fff; }
 .tech-jwt{ background:#000000; color:#fff; }
 .tech-rest{ background:#6366f1; color:#fff; }
+
+.tech-html{ background:#e34f26; color:#fff; }
+.tech-css{ background:#264de4; color:#fff; }
+.tech-js{ background:#f7df1e; color:#111; }
+.tech-emailjs{ background:#8940fa; color:#fff; }
+.tech-responsive{ background:#0ea5e9; color:#fff; }
 
 
 /* ============================
@@ -167,9 +179,66 @@ html[data-theme="dark"] .detail-hero{
 }
 
 .panel .btn-repo,
-.panel .btn-primary{
+.panel .btn-primary,
+.panel .btn-web{
   width:100%;
   text-align:center;
+}
+
+
+/* ============================
+   BOTONES
+============================ */
+
+/* Botón repositorio */
+.btn-repo{
+  background:#1f2937;
+  border:1px solid #374151;
+  color:#d1d5db;
+  padding:10px 16px;
+  border-radius:12px;
+  font-weight:600;
+  transition:.25s ease;
+  text-decoration:none;
+}
+
+.btn-repo:hover{
+  background:#374151;
+  transform:translateY(-2px);
+}
+
+/* Botón web */
+.btn-web{
+  background:#10b981;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:12px;
+  font-weight:600;
+  box-shadow:0 6px 18px rgba(16,185,129,0.25);
+  transition:.25s ease;
+  text-decoration:none;
+}
+
+.btn-web:hover{
+  transform:translateY(-2px);
+  filter:brightness(1.05);
+}
+
+/* Botón principal */
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent), #7c6bff);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:14px;
+  font-weight:700;
+  box-shadow:0 8px 26px rgba(79,70,229,0.12);
+  transition:.25s ease;
+  text-decoration:none;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  filter:brightness(.98);
 }
 
 

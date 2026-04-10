@@ -15,11 +15,21 @@
   <!-- Estilos específicos de páginas de proyecto -->
   <link rel="stylesheet" href="../project-detail.css">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../assets/img/foto.ico">
+
   <script src="../../assets/js/theme-toggle.js"></script>
 </head>
 
 <body>
   <main class="wrap" role="main">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb" style="margin-bottom:12px;">
+      <a href="../../index.html" class="muted" style="text-decoration:none;color:var(--muted)">Portfolio</a>
+      <span aria-hidden="true" style="margin:0 8px">›</span>
+      <span aria-current="page">AulasFree</span>
+    </nav>
 
     <!-- HERO -->
     <section class="detail-hero" role="article" aria-labelledby="aulasfree-title">
@@ -40,6 +50,16 @@
           </div>
 
           <div style="display:flex;flex-direction:column;gap:10px;width:100%">
+            <a class="btn-repo" href="https://github.com/PabloVillagranGonz/Aulas-Free" target="_blank"
+              rel="noopener noreferrer" aria-label="Repositorio AulasFree">
+              Ver repositorio
+            </a>
+
+            <a class="btn-web" href="https://pablovillagrangonz.github.io/Aulas-Free/" target="_blank"
+              rel="noopener noreferrer" aria-label="Ver sitio web AulasFree">
+              Ver sitio web
+            </a>
+
             <a class="btn-primary" href="../../index.html" style="text-align:center" aria-label="Volver al portfolio">
               Volver al portfolio
             </a>

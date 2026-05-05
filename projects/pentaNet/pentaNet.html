@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>PentaNet — Gestión académica full-stack | Pablo Villagrán</title>
+
+  <meta name="description"
+    content="PentaNet — Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../../styles.css">
+  <!-- Estilos específicos del proyecto -->
+  <link rel="stylesheet" href="../project-detail.css">
+
+  <script src="../../assets/js/theme-toggle.js"></script>
+
+</head>
+
+<body class="project-detail-page">
+  <main class="wrap" role="main">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb" style="margin-bottom:12px;">
+      <a href="../../index.html" class="muted" style="text-decoration:none;color:var(--muted)">Portfolio</a>
+      <span aria-hidden="true" style="margin:0 8px">›</span>
+      <span aria-current="page">PentaNet</span>
+    </nav>
+
+    <!-- HERO -->
+    <section class="detail-hero" role="article" aria-labelledby="pentanet-title">
+      <div class="hero-row">
+
+        <div>
+          <div class="hero-media">
+            <img src="../../assets/img/pentanet/gestor2.jpg" alt="PentaNet — Panel principal de gestión académica"
+              loading="lazy">
+          </div>
+        </div>
+
+        <aside class="hero-cta">
+          <div style="text-align:right">
+            <h1 id="pentanet-title" style="margin:0 0 8px">PentaNet</h1>
+            <p class="muted small" style="margin:0 0 12px">
+              Plataforma integral de gestión académica — Flutter · Spring Boot · API REST · JWT
+            </p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:10px;width:100%">
+            <a class="btn-repo" href="https://github.com/PabloVillagranGonz/PentaNetApi.git"
+              aria-label="Ver repositorio de PentaNet">
+              Ver repositorio
+            </a>
+
+            <a class="btn-primary" href="../../index.html" style="text-align:center" aria-label="Volver al portfolio">
+              Volver al portfolio
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- GRID -->
+      <div class="detail-grid">
+
+        <!-- COLUMNA PRINCIPAL -->
+        <div class="detail-section">
+
+          <h2>Resumen</h2>
+          <p class="muted">
+            <strong>PentaNet</strong> es una aplicación <strong>full-stack de gestión académica</strong> orientada a
+            conservatorios, escuelas de música y centros formativos.
+            Ha sido desarrollada como un proyecto real, con <strong>frontend en Flutter</strong> y
+            <strong>backend en Spring Boot</strong>, incluyendo autenticación segura,
+            control de roles y comunicación mediante API REST.
+          </p>
+
+          <h3>Objetivo del proyecto</h3>
+          <p class="muted">
+            Desarrollar una infraestructura digital capaz de gestionar la complejidad de un centro educativo moderno.
+            El sistema permite la convivencia de <strong>administradores, profesores, alumnos y personal de secretaría</strong>,
+            cada uno con flujos de trabajo optimizados y permisos granulares, garantizando la integridad de los datos
+            y la fluidez en la comunicación.
+          </p>
+
+          <h3>Gestión de usuarios y roles</h3>
+          <ul class="muted">
+            <li><strong>Administrador:</strong> Control total sobre centros, cursos, asignaturas, horarios, aulas y usuarios.</li>
+            <li><strong>Secretaría:</strong> Gestión especializada de la ocupación de espacios y reservas de aulas en tiempo real.</li>
+            <li><strong>Profesor:</strong> Seguimiento académico, gestión de calificaciones, faltas y comunicación con alumnos.</li>
+            <li><strong>Alumno:</strong> Consulta de horarios, expedientes, notas y reserva de espacios de estudio.</li>
+          </ul>
+
+          <p class="muted">
+            La asignación es completamente automática: cuando un alumno pertenece a un curso,
+            hereda directamente asignaturas, horarios y profesores, sin configuraciones manuales adicionales.
+          </p>
+
+          <h3>Tecnologías & stack</h3>
+          <div class="tech-list" style="margin-top:8px">
+            <span class="tech-pill tech-flutter">Flutter</span>
+            <span class="tech-pill tech-dart">Dart</span>
+            <span class="tech-pill tech-java">Java</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT</span>
+            <span class="tech-pill tech-rest">REST API</span>
+          </div>
+
+          <h3>Arquitectura</h3>
+          <ul class="muted">
+            <li><strong>Backend:</strong> Controladores → Servicios → Repositorios (Spring Boot).</li>
+            <li><strong>Frontend:</strong> Controllers / Services / Providers (Flutter).</li>
+            <li>Separación estricta entre lógica de negocio, UI y acceso a datos.</li>
+          </ul>
+
+          <h3>Sistema de mensajería interna</h3>
+          <ul class="muted">
+            <li>Bandeja de entrada y enviados</li>
+            <li>Mensajes leídos y no leídos</li>
+            <li>Eliminación y contador de mensajes</li>
+            <li>Gestión completa desde backend con usuario autenticado</li>
+          </ul>
+
+          <h3>Seguridad y autenticación</h3>
+          <ul class="muted">
+            <li>Login con usuario y contraseña</li>
+            <li>Autenticación mediante JWT</li>
+            <li>Protección de endpoints por rol (Spring Security)</li>
+            <li>Validación de permisos en backend</li>
+          </ul>
+
+          <h3>Control de acceso por roles</h3>
+          <ul class="muted">
+            <li>Las vistas se renderizan dinámicamente según el rol autenticado.</li>
+            <li>Los endpoints sensibles están protegidos mediante Spring Security.</li>
+            <li>El frontend no decide permisos: el backend valida cada acción.</li>
+          </ul>
+
+          <!-- GALERÍA ALUMNO -->
+          <h3>Galería — Vista Alumno</h3>
+          <p class="muted">
+            Interfaz del alumno: mensajería interna, bandeja de entrada/salida,
+            perfil personal, asignaturas, horarios y datos del centro.
+          </p>
+
+          <div class="collapse-wrapper" id="wrapper-alumno">
+            <div class="gallery gallery-alumno">
+              <img src="../../assets/img/pentanet/alumno2/home-user.png" alt="Alumno — Home del alumno" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/alumno2/recibir-mensaje.png" alt="Alumno — Recibir correo"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/persona-envio-mensaje.png" alt="Alumno — Nuevo correo"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/envio-mensaje.png" alt="Alumno — Correos enviados"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/perfil-usuario.png" alt="Alumno — Perfil del usuario"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/estado-cabinas.png" alt="Alumno — Estado cabinas" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/alumno2/horario.png" alt="Alumno — Horario" loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/asignaturas-faltas.png" alt="Alumno — Asignaturas y faltas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/calificaciones.png" alt="Alumno — Calificaciones" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/alumno2/expediente-notas.png" alt="Alumno — Expediente y notas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/alumno2/centro-usuario.png" alt="Alumno — Información del centro"
+                loading="lazy" width="1600">
+            </div>
+            <div class="collapse-overlay"></div>
+          </div>
+          <div class="btn-show-more-container">
+            <button class="btn-show-more" onclick="toggleGallery('wrapper-alumno', this)">
+              <span>Ver todas las capturas (Alumno)</span>
+              <span class="icon">↓</span>
+            </button>
+          </div>
+
+          <!-- GALERÍA PROFESOR -->
+          <h3>Galería — Vista profesor</h3>
+          <p class="muted">
+            Interfaz del profesor: mensajería interna, bandeja de entrada/salida,
+            perfil personal, asignaturas, horarios, asignar notas, asignar faltas y datos del centro.
+          </p>
+
+          <div class="collapse-wrapper" id="wrapper-profesor">
+            <div class="gallery gallery-alumno">
+              <img src="../../assets/img/pentanet/profesor/home-profe.png" alt="Profesor — Home del profesor"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/profesor/perfil.png" alt="Profesor — Perfil del profesor" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/profesor/horario.png" alt="Profesor — Horario del profesor"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/profesor/lista-asign.png" alt="Profesor — Listado de asignaturas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/profesor/lista-user.png" alt="Profesor — Listado de usuarios"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/profesor/notas-asign.png" alt="Profesor — Notas de asignaturas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/profesor/notas-alum.png" alt="Profesor — Notas alumnos" loading="lazy"
+                width="1600">
+            </div>
+            <div class="collapse-overlay"></div>
+          </div>
+          <div class="btn-show-more-container">
+            <button class="btn-show-more" onclick="toggleGallery('wrapper-profesor', this)">
+              <span>Ver todas las capturas (Profesor)</span>
+              <span class="icon">↓</span>
+            </button>
+          </div>
+
+          <!-- GALERÍA ADMIN -->
+          <h3>Galería — Vista Administrador</h3>
+          <p class="muted">
+            Interfaz del administrador: gestión completa del sistema académico,
+            usuarios, centros, cursos, asignaturas, aulas y horarios.
+          </p>
+
+          <div class="collapse-wrapper" id="wrapper-admin">
+            <div class="gallery gallery-admin">
+              <img src="../../assets/img/pentanet/admin/inicio-admin.png" alt="Admin — Inicio" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/centros-admin.png" alt="Admin — Información centros"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/creacion-centro.png" alt="Admin — Creación centros" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/listado-users.png" alt="Admin — Listado de usuarios"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/creacion-usuario.png" alt="Admin — Creación de usuarios"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/aulas-admin.png" alt="Admin — Listado de aulas" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/creacion-aula.png" alt="Admin — Creación de aulas" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/asignaturas.png" alt="Admin — Listado de asignaturas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/asignatura-curso-relacion.png"
+                alt="Admin — Relación asignatura-curso" loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/asignatura-alumno-profe.png"
+                alt="Admin — Alumnos, profesores y centros asociados a asignaturas" loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/cursos-admin.png" alt="Admin — Listado de cursos"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/user-admin.png" alt="Admin — Detalle de usuario"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/pentanet/admin/info-genera.png" alt="Admin — Información general" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/info-alumno.png" alt="Admin — Información alumno" loading="lazy"
+                width="1600">
+              <img src="../../assets/img/pentanet/admin/info-profe.png" alt="Admin — Información profesor" loading="lazy"
+                width="1600">
+            </div>
+            <div class="collapse-overlay"></div>
+          </div>
+          <div class="btn-show-more-container">
+            <button class="btn-show-more" onclick="toggleGallery('wrapper-admin', this)">
+              <span>Ver todas las capturas (Administrador)</span>
+              <span class="icon">↓</span>
+            </button>
+          </div>
+
+          <!-- GALERÍA SECRETARIA -->
+          <h3>Galería — Vista Secretaría (Gestión de Aulas)</h3>
+          <p class="muted">
+            Interfaz de secretaría enfocada en la optimización de espacios. Incluye el motor de reservas
+            en tiempo real (anteriormente Aulas Free), permitiendo el control dinámico de la ocupación,
+            historial de usos y gestión de inventario de aulas.
+          </p>
+
+          <div class="gallery gallery-alumno">
+
+            <img src="../../assets/img/pentanet/secretaria/estado-cabinas.png" alt="Secretaria — Estado cabinas"
+              loading="lazy" width="1600">
+            <img src="../../assets/img/pentanet/secretaria/hacer-reserva.png" alt="Secretaria — Hacer reserva"
+              loading="lazy" width="1600">
+            <img src="../../assets/img/pentanet/secretaria/reservas-activas.png" alt="Secretaria — Reservas activas"
+              loading="lazy" width="1600">
+            <img src="../../assets/img/pentanet/secretaria/historial-reservas.png" alt="Secretaria — Historial reservas"
+              loading="lazy" width="1600">
+          </div>
+
+          <h3>Aprendizajes clave</h3>
+          <ul class="muted">
+            <li>Diseño de APIs REST limpias y mantenibles.</li>
+            <li>Control de roles y permisos en aplicaciones reales.</li>
+            <li>Integración completa frontend ↔ backend.</li>
+            <li>Gestión de estado y arquitectura en Flutter.</li>
+            <li>Pensar en escalabilidad y mantenimiento desde el diseño.</li>
+          </ul>
+
+        </div>
+
+        <!-- COLUMNA LATERAL -->
+        <aside class="panel card" style="padding:18px">
+          <h3>Tecnologías & rol</h3>
+          <p class="muted">
+            Rol: diseño, arquitectura y desarrollo full-stack del proyecto.
+          </p>
+
+          <div class="tech-list" style="margin-top:8px">
+            <span class="tech-pill tech-flutter">Flutter</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT</span>
+          </div>
+
+          <h3 style="margin-top:14px">Fecha</h3>
+          <p class="muted">2024 – 2025</p>
+
+          <h3 style="margin-top:12px">Enlaces</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">
+            <a class="btn-repo" href="https://github.com/PabloVillagranGonz/PentaNetApi.git"
+              aria-label="Ver repositorio de PentaNet"> Ver
+              Repositorio
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX / CAROUSEL -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" aria-label="Anterior">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script>
+    function toggleGallery(wrapperId, btn) {
+      const wrapper = document.getElementById(wrapperId);
+      const isExpanded = wrapper.classList.toggle('expanded');
+      const span = btn.querySelector('span');
+      const roleName = wrapperId.replace('wrapper-', '');
+      const capitalizedRole = roleName.charAt(0).toUpperCase() + roleName.slice(1);
+
+      if (isExpanded) {
+        span.textContent = `Ver menos ( ${capitalizedRole} )`;
+      } else {
+        span.textContent = `Ver todas las capturas ( ${capitalizedRole} )`;
+        // Scroll suave hacia arriba si el usuario cierra
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+  <script src="../../assets/js/lightbox.js"></script>
+</body>
+
+</html>

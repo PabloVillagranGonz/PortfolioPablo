@@ -31,19 +31,14 @@ Desarrollador backend especializado en **Java y Spring Boot**, con experiencia e
 
 ## 🚀 Proyectos destacados
 
-### 🎓 [CentrosNet](projects/centrosNet/centrosNet.html)
-Plataforma **full-stack** de gestión académica para centros educativos.
-Control de roles (administrador, profesor, alumno), mensajería interna y API REST segura con JWT.
+### 🎓 [PentaNet](projects/pentanet/pentanet.html)
+Plataforma **full-stack** de gestión académica integral.
+Incluye control de roles (admin, secretaría, profesor, alumno), sistema de reserva de aulas en tiempo real, mensajería interna y expedientes académicos.
 > Flutter · Spring Boot · MySQL · JWT
 
 ### 🎵 [La Liga](projects/laliga/ligaweb.html)
 Web oficial para grupo musical con diseño responsive, galería y formulario de contacto funcional.
 > HTML · CSS · EmailJS
-
-### 🏫 [AulasFree](projects/aulasfree/aulasfree.html)
-Sistema inteligente de gestión de reservas de aulas en tiempo real para conservatorios.
-Control por roles (secretaría y alumno), cuenta atrás y automatización de cierres.
-> Flutter · Spring Boot · MySQL
 
 ## 📂 Estructura del proyecto
 
@@ -57,9 +52,8 @@ Portfolio/
 │   ├── emailJS/            # Integración EmailJS
 │   └── archivos/           # CV descargable
 └── projects/
-    ├── centrosNet/          # Detalle CentrosNet
+    ├── PentaNet/          # Detalle PentaNet (Inc. Gestión de Aulas)
     ├── laliga/             # Detalle La Liga
-    ├── aulasfree/          # Detalle AulasFree
     └── project-detail.css  # Estilos compartidos
 ```
 

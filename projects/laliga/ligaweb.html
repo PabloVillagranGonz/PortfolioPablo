@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="project-detail-page">
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
@@ -115,16 +115,40 @@
           </ul>
 
           <h3>Capturas / Galería</h3>
-          <div class="gallery">
-            <img src="../../assets/img/laliga/inicio.png" alt="Pantalla inicio La Liga" title="Pantalla inicio La Liga"
-              loading="lazy">
-            <img src="../../assets/img/laliga/galeria.png" alt="Galería La Liga" title="Galería La Liga" loading="lazy">
-            <img src="../../assets/img/laliga/contacto.png" alt="Sección contacto La Liga"
-              title="Sección contacto La Liga" loading="lazy">
-            <img src="../../assets/img/laliga/musica.png" alt="Sección Música La Liga" title="Sección Música La Liga"
-              loading="lazy">
+          <div class="collapse-wrapper" id="wrapper-liga">
+            <div class="gallery">
+              <img src="../../assets/img/laliga/inicio.png" alt="Pantalla inicio La Liga" title="Pantalla inicio La Liga"
+                loading="lazy">
+              <img src="../../assets/img/laliga/galeria.png" alt="Galería La Liga" title="Galería La Liga" loading="lazy">
+              <img src="../../assets/img/laliga/contacto.png" alt="Sección contacto La Liga"
+                title="Sección contacto La Liga" loading="lazy">
+              <img src="../../assets/img/laliga/musica.png" alt="Sección Música La Liga" title="Sección Música La Liga"
+                loading="lazy">
+            </div>
+            <div class="collapse-overlay"></div>
+          </div>
+          <div class="btn-show-more-container">
+            <button class="btn-show-more" onclick="toggleGallery('wrapper-liga', this)">
+              <span>Ver todas las capturas</span>
+              <span class="icon">↓</span>
+            </button>
           </div>
         </div>
+
+  <script>
+    function toggleGallery(wrapperId, btn) {
+      const wrapper = document.getElementById(wrapperId);
+      const isExpanded = wrapper.classList.toggle('expanded');
+      const span = btn.querySelector('span');
+
+      if (isExpanded) {
+        span.textContent = `Ver menos`;
+      } else {
+        span.textContent = `Ver todas las capturas`;
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
 
         <!-- Columna derecha -->
         <aside class="panel card" style="padding:18px">

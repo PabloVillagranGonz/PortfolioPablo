@@ -23,12 +23,13 @@
 </head>
 
 <body class="project-detail-page">
+  <div class="progress-bar"></div>
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb" class="breadcrumb" style="margin-bottom:12px;">
-      <a href="../../index.html" class="muted" style="text-decoration:none;color:var(--muted)">Portfolio</a>
-      <span aria-hidden="true" style="margin:0 8px">›</span>
+    <nav aria-label="breadcrumb" class="breadcrumb mb-12">
+      <a href="../../index.html" class="muted no-decoration">Portfolio</a>
+      <span aria-hidden="true" class="mx-8">›</span>
       <span aria-current="page">La Liga</span>
     </nav>
 
@@ -43,14 +44,14 @@
         </div>
 
         <aside class="hero-cta">
-          <div style="text-align:right">
-            <h1 id="la-liga-title" style="margin:0 0 8px">La Liga</h1>
-            <p class="muted small" style="margin:0 0 12px">
+          <div class="text-right">
+            <h1 id="la-liga-title" class="m-0 mb-8">La Liga</h1>
+            <p class="muted small m-0 mb-12">
               Página web para grupo musical — HTML, CSS y EmailJS
             </p>
           </div>
 
-          <div style="display:flex;flex-direction:column;gap:10px;width:100%">
+          <div class="flex-col gap-10 w-full">
             <a class="btn-repo" href="https://github.com/PabloVillagranGonz/La-Liga"
               aria-label="Ver repositorio La Liga">
               Ver repositorio
@@ -61,7 +62,7 @@
               Ver sitio web
             </a>
 
-            <a class="btn-primary" href="../../index.html" style="text-align:center"
+            <a class="btn-primary text-center" href="../../index.html"
               aria-label="Volver al portfolio">Volver al portfolio</a>
           </div>
         </aside>
@@ -93,7 +94,7 @@
             y un enfoque mobile-first. Se incluyen CTAs claros y una experiencia de navegación fluida.
           </p>
 
-          <div class="tech-list" style="margin-top:8px">
+          <div class="tech-list mt-8">
             <span class="tech-pill tech-html">HTML</span>
             <span class="tech-pill tech-css">CSS</span>
             <span class="tech-pill tech-js">JavaScript</span>
@@ -151,22 +152,21 @@
   </script>
 
         <!-- Columna derecha -->
-        <aside class="panel card" style="padding:18px">
+        <aside class="panel card p-18">
           <h3>Tecnologías & rol</h3>
           <p class="muted">Rol: Diseño y desarrollo completo del sitio web.</p>
 
-          <div class="tech-list" style="margin-top:8px">
+          <div class="tech-list mt-8">
             <span class="tech-pill tech-html">HTML</span>
             <span class="tech-pill tech-css">CSS</span>
             <span class="tech-pill tech-js">JavaScript</span>
             <span class="tech-pill tech-emailjs">EmailJS</span>
           </div>
 
-          <h3 style="margin-top:14px">Fecha</h3>
+          <h3 class="mt-14">Fecha</h3>
           <p class="muted">2025</p>
-
-          <h3 style="margin-top:12px">Enlaces</h3>
-          <div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">
+          <h3 class="mt-12">Enlaces</h3>
+          <div class="flex-col gap-8 mt-6">
             <a class="btn-repo" href="https://github.com/PabloVillagranGonz/La-Liga" target="_blank"
               rel="noopener noreferrer" aria-label="Repositorio La Liga">Repositorio</a>
 
@@ -174,7 +174,7 @@
               rel="noopener noreferrer" aria-label="Sitio web La Liga">Sitio web</a>
           </div>
 
-          <h3 style="margin-top:18px">Notas técnicas</h3>
+          <h3 class="mt-18">Notas técnicas</h3>
           <p class="muted">Se recomienda añadir honeypot o recaptcha para evitar spam en EmailJS.</p>
         </aside>
 
@@ -192,6 +192,7 @@
   </div>
 
   <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/scroll-reveal.js"></script>
 </body>
 
 </html>

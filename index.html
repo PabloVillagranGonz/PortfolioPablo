@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <div class="progress-bar"></div>
   <!-- NAV -->
   <header class="header">
     <div class="wrap nav">
@@ -120,7 +121,7 @@
     <section id="tecnologias" class="section">
       <h2>Tecnologías</h2>
 
-      <div class="tech-list" style="margin-top:16px">
+      <div class="tech-list mt-16">
 
         <!-- Backend -->
         <span class="tech-pill tech-java">Java</span>
@@ -145,7 +146,7 @@
         <span class="tech-pill tech-android">Android</span>
       </div>
 
-      <p class="muted" style="margin-top:16px">
+      <p class="muted mt-16">
         Experiencia principal en desarrollo backend con Spring Boot y diseño de APIs REST seguras.
         Conocimientos básicos de Angular para creación de componentes, routing y consumo de APIs.
         Desarrollo multiplataforma con Flutter y manejo de bases de datos relacionales y no relacionales.
@@ -193,10 +194,10 @@
 
               <div class="project-actions">
                 <a class="btn-repo" href="https://github.com/PabloVillagranGonz/PentaNetApi.git"
-                  rel="noopener noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   Repositorio
                 </a>
-                <a class="btn-primary" href="projects/pentanet/pentanet.html" target="_blank" rel="noopener noreferrer">
+                <a class="btn-primary" href="projects/pentaNet/pentaNet.html" target="_blank" rel="noopener noreferrer">
                   Leer más
                 </a>
               </div>
@@ -249,7 +250,7 @@
         <div class="timeline">
           <div class="timeline-item">
             <div class="dot" aria-hidden="true"></div>
-            <div class="card" style="border-left: 4px solid var(--accent);">
+            <div class="card accent">
               <h3>Desarrollador Frontend (Prácticas) — Luce IT</h3>
               <p class="muted">Valladolid · 03/2026 – Actualidad</p>
               <p class="muted">
@@ -258,7 +259,7 @@
                 consumo
                 de APIs REST.
               </p>
-              <ul class="muted" style="margin-top: 10px; padding-left: 18px;">
+              <ul class="muted mt-10 pl-18">
                 <li>Desarrollo de componentes reutilizables con Angular y TypeScript.</li>
                 <li>Maquetación responsive and precisa utilizando HTML5 y CSS3.</li>
                 <li>Integración de servicios backend y gestión de estados en el cliente.</li>
@@ -269,7 +270,7 @@
 
           <div class="timeline-item">
             <div class="dot" aria-hidden="true"></div>
-            <div class="card" style="border-left: 4px solid #f89820;">
+            <div class="card secondary">
               <h3>Estudios Profesionales de Música — Conservatorio de Valladolid</h3>
               <p class="muted">Especialidad en trombón · Actualidad</p>
               <p class="muted">
@@ -334,7 +335,7 @@
         </div>
         <div class="collapse-overlay"></div>
       </div>
-      <div class="btn-show-more-container" style="margin-top: 20px;">
+      <div class="btn-show-more-container mt-20">
         <button class="btn-show-more" onclick="toggleGallery('wrapper-experiencia', this)">
           <span>Ver trayectoria completa</span>
           <span class="icon">↓</span>
@@ -376,12 +377,12 @@
           <textarea id="cf-message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
 
           <!-- Honeypot (campo oculto para bots) -->
-          <label style="display:none">No rellenar</label>
-          <input type="text" name="phone" style="display:none" autocomplete="off" tabindex="-1" />
+          <label class="hidden">No rellenar</label>
+          <input type="text" name="phone" class="hidden" autocomplete="off" tabindex="-1" />
 
           <button class="btn" id="cf-send" type="submit">Enviar mensaje</button>
 
-          <p id="cf-status" aria-live="polite" style="margin-top:10px;color:var(--muted)"></p>
+          <p id="cf-status" aria-live="polite" class="mt-10"></p>
         </form>
 
         <aside class="contact-info card">
@@ -410,6 +411,8 @@
   <script src="assets/js/mobile-menu.js"></script>
   <!-- Theme Toggle -->
   <script src="assets/js/theme-toggle.js"></script>
+  <!-- Scroll Reveal + Progress Bar -->
+  <script src="assets/js/scroll-reveal.js"></script>
 
 </body>
 

@@ -62,8 +62,8 @@
               Ver sitio web
             </a>
 
-            <a class="btn-primary text-center" href="../../index.html"
-              aria-label="Volver al portfolio">Volver al portfolio</a>
+            <a class="btn-primary text-center" href="../../index.html" aria-label="Volver al portfolio">Volver al
+              portfolio</a>
           </div>
         </aside>
       </div>
@@ -76,7 +76,7 @@
         <div class="detail-section">
           <h2>Descripción general</h2>
           <p class="muted">
-            <strong>La Liga</strong> es la web oficial del grupo musical, reescrita completamente como una 
+            <strong>La Liga</strong> es la web oficial del grupo musical, reescrita completamente como una
             <strong>Single Page Application (SPA)</strong> moderna. Diseñada para presentar su estilo,
             anunciar actuaciones y facilitar el contacto con una experiencia de usuario fluida y rápida.
           </p>
@@ -118,10 +118,14 @@
           <h3>Capturas / Galería</h3>
           <div class="collapse-wrapper" id="wrapper-liga">
             <div class="gallery">
-              <img src="../../assets/img/laliga/Inicio.png" alt="Pantalla de Inicio" title="Pantalla de Inicio" loading="lazy">
-              <img src="../../assets/img/laliga/Contacto.png" alt="Sección Contacto" title="Sección Contacto" loading="lazy">
-              <img src="../../assets/img/laliga/Discografia.png" alt="Sección Discografía" title="Sección Discografía" loading="lazy">
-              <img src="../../assets/img/laliga/Galeria.png" alt="Galería de La Liga" title="Galería de La Liga" loading="lazy">
+              <img src="../../assets/img/laliga/Inicio.png" alt="Pantalla de Inicio" title="Pantalla de Inicio"
+                loading="lazy">
+              <img src="../../assets/img/laliga/Contacto.png" alt="Sección Contacto" title="Sección Contacto"
+                loading="lazy">
+              <img src="../../assets/img/laliga/Discografia.png" alt="Sección Discografía" title="Sección Discografía"
+                loading="lazy">
+              <img src="../../assets/img/laliga/Galeria.png" alt="Galería de La Liga" title="Galería de La Liga"
+                loading="lazy">
             </div>
             <div class="collapse-overlay"></div>
           </div>
@@ -133,20 +137,20 @@
           </div>
         </div>
 
-  <script>
-    function toggleGallery(wrapperId, btn) {
-      const wrapper = document.getElementById(wrapperId);
-      const isExpanded = wrapper.classList.toggle('expanded');
-      const span = btn.querySelector('span');
+        <script>
+          function toggleGallery(wrapperId, btn) {
+            const wrapper = document.getElementById(wrapperId);
+            const isExpanded = wrapper.classList.toggle('expanded');
+            const span = btn.querySelector('span');
 
-      if (isExpanded) {
-        span.textContent = `Ver menos`;
-      } else {
-        span.textContent = `Ver todas las capturas`;
-        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-  </script>
+            if (isExpanded) {
+              span.textContent = `Ver menos`;
+            } else {
+              span.textContent = `Ver todas las capturas`;
+              wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        </script>
 
         <!-- Columna derecha -->
         <aside class="panel card p-18">
@@ -171,7 +175,8 @@
           </div>
 
           <h3 class="mt-18">Notas técnicas</h3>
-          <p class="muted">Proyecto migrado desde una versión inicial estática en HTML/CSS a una arquitectura moderna basada en componentes React.</p>
+          <p class="muted">Proyecto migrado desde una versión inicial estática en HTML/CSS a una arquitectura moderna
+            basada en componentes React.</p>
         </aside>
 
       </div>

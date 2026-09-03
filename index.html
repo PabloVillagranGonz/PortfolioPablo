@@ -337,30 +337,13 @@
         <div class="collapse-overlay"></div>
       </div>
       <div class="btn-show-more-container mt-20">
-        <button class="btn-show-more" onclick="toggleGallery('wrapper-experiencia', this)">
+        <button class="btn-show-more" data-label-expanded="Ver menos trayectoria"
+          onclick="toggleGallery('wrapper-experiencia', this)">
           <span>Ver trayectoria completa</span>
           <span class="icon">↓</span>
         </button>
       </div>
     </section>
-
-    <script>
-      function toggleGallery(wrapperId, btn) {
-        const wrapper = document.getElementById(wrapperId);
-        const isExpanded = wrapper.classList.toggle('expanded');
-        const span = btn.querySelector('span');
-
-        if (wrapperId === 'wrapper-experiencia') {
-          span.textContent = isExpanded ? 'Ver menos trayectoria' : 'Ver trayectoria completa';
-        } else {
-          span.textContent = isExpanded ? 'Ver menos' : 'Ver todas las capturas';
-        }
-
-        if (!isExpanded) {
-          wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    </script>
 
     <!-- CONTACTO -->
     <section id="contacto" class="section contact-section">
@@ -404,12 +387,16 @@
   </main>
 
   <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"
+    integrity="sha384-91xU8aqqhiXDWyGdT9UafmQiFFtK+Utp9IXVnNe5jYTL+8mM2WowIPQT3GWFJUdY"
+    crossorigin="anonymous"></script>
   <!-- Tu script separado -->
   <script src="assets/emailJS/email.js"></script>
 
   <!-- Mobile Menu + Scroll Animations -->
   <script src="assets/js/mobile-menu.js"></script>
+  <!-- Toggle de galerías / bloques colapsables -->
+  <script src="assets/js/gallery-toggle.js"></script>
   <!-- Theme Toggle -->
   <script src="assets/js/theme-toggle.js"></script>
   <!-- Scroll Reveal + Progress Bar -->

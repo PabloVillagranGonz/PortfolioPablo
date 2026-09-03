@@ -137,21 +137,6 @@
           </div>
         </div>
 
-        <script>
-          function toggleGallery(wrapperId, btn) {
-            const wrapper = document.getElementById(wrapperId);
-            const isExpanded = wrapper.classList.toggle('expanded');
-            const span = btn.querySelector('span');
-
-            if (isExpanded) {
-              span.textContent = `Ver menos`;
-            } else {
-              span.textContent = `Ver todas las capturas`;
-              wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }
-        </script>
-
         <!-- Columna derecha -->
         <aside class="panel card p-18">
           <h3>Tecnologías & rol</h3>
@@ -194,6 +179,7 @@
 
   <script src="../../assets/js/lightbox.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
+  <script src="../../assets/js/gallery-toggle.js"></script>
 </body>
 
 </html>

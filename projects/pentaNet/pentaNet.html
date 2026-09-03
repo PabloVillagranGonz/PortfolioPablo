@@ -11,7 +11,7 @@
     content="PentaNet — Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../styles.css?v=2">
   <!-- Estilos específicos del proyecto -->
   <link rel="stylesheet" href="../project-detail.css">
 
@@ -173,7 +173,8 @@
             <div class="collapse-overlay"></div>
           </div>
           <div class="btn-show-more-container">
-            <button class="btn-show-more" onclick="toggleGallery('wrapper-alumno', this)">
+            <button class="btn-show-more" data-label-expanded="Ver menos (Alumno)"
+              onclick="toggleGallery('wrapper-alumno', this)">
               <span>Ver todas las capturas (Alumno)</span>
               <span class="icon">↓</span>
             </button>
@@ -206,7 +207,8 @@
             <div class="collapse-overlay"></div>
           </div>
           <div class="btn-show-more-container">
-            <button class="btn-show-more" onclick="toggleGallery('wrapper-profesor', this)">
+            <button class="btn-show-more" data-label-expanded="Ver menos (Profesor)"
+              onclick="toggleGallery('wrapper-profesor', this)">
               <span>Ver todas las capturas (Profesor)</span>
               <span class="icon">↓</span>
             </button>
@@ -255,7 +257,8 @@
             <div class="collapse-overlay"></div>
           </div>
           <div class="btn-show-more-container">
-            <button class="btn-show-more" onclick="toggleGallery('wrapper-admin', this)">
+            <button class="btn-show-more" data-label-expanded="Ver menos (Administrador)"
+              onclick="toggleGallery('wrapper-admin', this)">
               <span>Ver todas las capturas (Administrador)</span>
               <span class="icon">↓</span>
             </button>
@@ -331,25 +334,9 @@
     <button class="lightbox-next" aria-label="Siguiente">›</button>
   </div>
 
-  <script>
-    function toggleGallery(wrapperId, btn) {
-      const wrapper = document.getElementById(wrapperId);
-      const isExpanded = wrapper.classList.toggle('expanded');
-      const span = btn.querySelector('span');
-      const roleName = wrapperId.replace('wrapper-', '');
-      const capitalizedRole = roleName.charAt(0).toUpperCase() + roleName.slice(1);
-
-      if (isExpanded) {
-        span.textContent = `Ver menos ( ${capitalizedRole} )`;
-      } else {
-        span.textContent = `Ver todas las capturas ( ${capitalizedRole} )`;
-        // Scroll suave hacia arriba si el usuario cierra
-        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-  </script>
   <script src="../../assets/js/lightbox.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
+  <script src="../../assets/js/gallery-toggle.js"></script>
 </body>
 
 </html>

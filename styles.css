@@ -670,6 +670,7 @@ h2 { margin: 0 0 18px; font-size: 22px; }
 .tech-mysql  { background: #00618a; color: #fff; border-color: rgba(0,97,138,0.18); }
 .tech-jwt    { background: #000000; color: #fff; border-color: rgba(0,0,0,0.18); }
 .tech-rest   { background: #6366f1; color: #fff; border-color: rgba(99,102,241,0.18); }
+.tech-websocket { background: #ec4899; color: #fff; border-color: rgba(236,72,153,0.18); }
 
 /* Flutter stack */
 .tech-flutter { background: #02569b; color: #fff; border-color: rgba(2,86,155,0.18); }

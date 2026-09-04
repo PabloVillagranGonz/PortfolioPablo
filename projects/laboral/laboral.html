@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Laboral — Gestión de pedidos para laboratorio dental | Pablo Villagrán</title>
+
+  <meta name="description"
+    content="Laboral — Sistema full-stack de gestión de pedidos para laboratorio dental. Angular y Spring Boot con notificaciones en tiempo real vía WebSocket, roles y JWT.">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../../styles.css?v=2">
+  <!-- Estilos específicos del proyecto -->
+  <link rel="stylesheet" href="../project-detail.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../assets/img/foto.ico">
+
+  <script src="../../assets/js/theme-toggle.js"></script>
+
+</head>
+
+<body class="project-detail-page">
+  <div class="progress-bar"></div>
+  <main class="wrap" role="main">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb mb-12">
+      <a href="../../index.html" class="muted no-decoration">Portfolio</a>
+      <span aria-hidden="true" class="mx-8">›</span>
+      <span aria-current="page">Laboral</span>
+    </nav>
+
+    <!-- HERO -->
+    <section class="detail-hero" role="article" aria-labelledby="laboral-title">
+      <div class="hero-row">
+
+        <div>
+          <div class="hero-media">
+            <img src="../../assets/img/laboral/portada-cover.webp" alt="Laboral — Sistema de gestión de pedidos para laboratorio dental"
+              loading="lazy">
+          </div>
+        </div>
+
+        <aside class="hero-cta">
+          <div class="text-right">
+            <h1 id="laboral-title" class="m-0 mb-8">Laboral</h1>
+            <p class="muted small m-0 mb-12">
+              Gestión de pedidos para laboratorio dental — Angular · Spring Boot · WebSocket · JWT
+            </p>
+          </div>
+
+          <div class="flex-col gap-10 w-full">
+            <a class="btn-primary text-center" href="../../index.html" aria-label="Volver al portfolio">
+              Volver al portfolio
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- GRID -->
+      <div class="detail-grid">
+
+        <!-- COLUMNA PRINCIPAL -->
+        <div class="detail-section">
+
+          <h2>Resumen</h2>
+          <p class="muted">
+            <strong>Laboral</strong> es una aplicación <strong>full-stack</strong> desarrollada para un
+            <strong>laboratorio dental</strong>, encargada de digitalizar por completo el flujo de pedidos entre
+            el laboratorio y las clínicas que le envían trabajo. Sustituye la clásica pizarra física por un panel
+            en tiempo real, con <strong>frontend en Angular</strong> y <strong>backend en Spring Boot</strong>.
+            Proyecto real para cliente, actualmente en producción.
+          </p>
+
+          <h3>Objetivo del proyecto</h3>
+          <p class="muted">
+            El laboratorio gestionaba sus pedidos con una pizarra física y notas manuales: sin trazabilidad,
+            sin historial y con riesgo constante de perder información sobre plazos de entrega. Laboral centraliza
+            todo ese flujo en un panel digital compartido por administración y técnicos, con
+            <strong>alertas automáticas de pedidos fuera de plazo</strong> y actualización en tiempo real
+            entre todos los puestos conectados.
+          </p>
+
+          <h3>Gestión de pedidos — Pizarra digital</h3>
+          <p class="muted">
+            El núcleo de la aplicación es la pizarra de pedidos, con cuatro vistas intercambiables sobre los
+            mismos datos:
+          </p>
+          <ul class="muted">
+            <li><strong>Tabla:</strong> listado filtrable por estado y clínica, con aviso visual de entregas vencidas.</li>
+            <li><strong>Kanban:</strong> pedidos organizados por estado (en proceso, en prueba, terminación, empaquetado, en salida, entregado).</li>
+            <li><strong>Calendario:</strong> vista mensual de fechas de entrega.</li>
+            <li><strong>Por técnico:</strong> carga de trabajo agrupada por técnico asignado.</li>
+          </ul>
+          <p class="muted">
+            Cada pedido registra paciente, clínica, tipo de trabajo, fechas de entrada/entrega, técnicos asignados,
+            si es una prueba y notas de laboratorio. Los cambios se propagan al instante a todos los usuarios
+            conectados mediante <strong>WebSocket</strong>, sin necesidad de recargar.
+          </p>
+
+          <h3>Directorios: clínicas, técnicos y catálogo</h3>
+          <ul class="muted">
+            <li><strong>Clínicas:</strong> alta y gestión de clínicas clientes, con contacto y días de entrega por defecto.</li>
+            <li><strong>Técnicos:</strong> equipo del laboratorio, identificado por siglas y color para la pizarra.</li>
+            <li><strong>Catálogo de tipos de trabajo:</strong> servicios ofrecidos (coronas, férulas, prótesis, carillas, esqueléticos...).</li>
+          </ul>
+
+          <h3>Mensajería y notificaciones automáticas</h3>
+          <p class="muted">
+            Un centro de notificaciones interno avisa de eventos que requieren atención: pedidos que han superado
+            su fecha de entrega o pruebas que han vuelto de la clínica, sin depender de que alguien revise la
+            pizarra manualmente.
+          </p>
+
+          <h3>Control de acceso por roles</h3>
+          <ul class="muted">
+            <li><strong>Administrador:</strong> control total — crea y elimina pedidos, gestiona clínicas, técnicos y catálogo.</li>
+            <li><strong>Técnico:</strong> solo ve y actualiza el estado de los pedidos que tiene asignados.</li>
+            <li>Autenticación con <strong>JWT</strong> y autorización a nivel de endpoint con Spring Security.</li>
+            <li>La conexión WebSocket también exige un JWT válido, evitando que la pizarra en tiempo real quede expuesta.</li>
+          </ul>
+
+          <h3>Tecnologías & stack</h3>
+          <div class="tech-list mt-8">
+            <span class="tech-pill tech-angular">Angular</span>
+            <span class="tech-pill tech-java">Java 21</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT</span>
+            <span class="tech-pill tech-rest">REST API</span>
+            <span class="tech-pill tech-websocket">WebSocket</span>
+            <span class="tech-pill tech-tailwind">Tailwind</span>
+          </div>
+
+          <h3>Arquitectura</h3>
+          <ul class="muted">
+            <li><strong>Backend:</strong> Controladores → Servicios → Repositorios (Spring Boot + Spring Data JPA), con capa de seguridad JWT independiente.</li>
+            <li><strong>Frontend:</strong> componentes standalone de Angular, servicios para API REST y para el canal WebSocket (STOMP), guards de ruta por rol.</li>
+            <li>CORS restringido a los orígenes autorizados y credenciales de base de datos externalizadas por variables de entorno.</li>
+          </ul>
+
+          <h3>Aprendizajes clave</h3>
+          <ul class="muted">
+            <li>Comunicación en tiempo real con WebSocket/STOMP protegida por JWT.</li>
+            <li>Diseño de un modelo de permisos por rol a nivel de dato (un técnico solo actúa sobre lo suyo), no solo de pantalla.</li>
+            <li>Migración progresiva de Angular a lo largo de varias versiones mayores sin parar el desarrollo.</li>
+            <li>Trabajo con un cliente real: iterar sobre un flujo de trabajo (pizarra física) ya existente en vez de partir de cero.</li>
+          </ul>
+
+          <!-- GALERÍA -->
+          <h3>Galería</h3>
+          <p class="muted">
+            Pizarra digital de pedidos en sus distintas vistas, directorios de clínicas y técnicos, catálogo de
+            trabajos y centro de mensajería.
+          </p>
+
+          <div class="collapse-wrapper" id="wrapper-laboral">
+            <div class="gallery">
+              <img src="../../assets/img/laboral/dashboard-tabla.webp" alt="Pizarra digital — vista de tabla"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/dashboard-kanban.webp" alt="Pizarra digital — vista Kanban"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/dashboard-calendario.webp" alt="Pizarra digital — vista de calendario"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/nuevo-pedido.webp" alt="Formulario de nuevo pedido"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/clinicas.webp" alt="Directorio de clínicas"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/tecnicos.webp" alt="Directorio de técnicos"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/catalogo.webp" alt="Catálogo de tipos de trabajo"
+                loading="lazy" width="1600">
+              <img src="../../assets/img/laboral/mensajeria.webp" alt="Centro de notificaciones / mensajería"
+                loading="lazy" width="1600">
+            </div>
+            <div class="collapse-overlay"></div>
+          </div>
+          <div class="btn-show-more-container">
+            <button class="btn-show-more" data-label-expanded="Ver menos capturas"
+              onclick="toggleGallery('wrapper-laboral', this)">
+              <span>Ver todas las capturas</span>
+              <span class="icon">↓</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA LATERAL -->
+        <aside class="panel card p-18">
+          <h3>Tecnologías & rol</h3>
+          <p class="muted">
+            Rol: diseño, arquitectura y desarrollo full-stack del proyecto para el cliente.
+          </p>
+
+          <div class="tech-list mt-8">
+            <span class="tech-pill tech-angular">Angular</span>
+            <span class="tech-pill tech-spring">Spring Boot</span>
+            <span class="tech-pill tech-mysql">MySQL</span>
+            <span class="tech-pill tech-jwt">JWT</span>
+            <span class="tech-pill tech-websocket">WebSocket</span>
+          </div>
+
+          <h3 class="mt-14">Fecha</h3>
+          <p class="muted">2026 – Actualidad</p>
+
+          <h3 class="mt-12">Nota</h3>
+          <p class="muted small">
+            Proyecto real para un cliente en activo. Por confidencialidad, el nombre del negocio no se muestra y
+            el código no es público.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX / CAROUSEL -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" aria-label="Anterior">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/scroll-reveal.js"></script>
+  <script src="../../assets/js/gallery-toggle.js"></script>
+</body>
+
+</html>

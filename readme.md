@@ -31,6 +31,11 @@ Desarrollador backend especializado en **Java y Spring Boot**, con experiencia e
 
 ## 🚀 Proyectos destacados
 
+### 🦷 [Laboral](projects/laboral/laboral.html)
+Sistema **full-stack** de gestión de pedidos para laboratorio dental (proyecto real para cliente).
+Pizarra digital en tiempo real (tabla, Kanban, calendario, por técnico), notificaciones automáticas vía WebSocket y control de acceso por roles.
+> Angular · Spring Boot · MySQL · JWT · WebSocket
+
 ### 🎓 [PentaNet](projects/pentanet/pentanet.html)
 Plataforma **full-stack** de gestión académica integral.
 Incluye control de roles (admin, secretaría, profesor, alumno), sistema de reserva de aulas en tiempo real, mensajería interna y expedientes académicos.

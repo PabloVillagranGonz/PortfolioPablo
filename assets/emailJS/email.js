@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    if (!form.consent.checked) {
+      status.textContent = 'Debes aceptar la política de privacidad para enviar el mensaje.';
+      return;
+    }
+
     // Envío
     const SERVICE_ID = 'service_j30lsnr';
     const TEMPLATE_ID = 'template_h0i4mwv';

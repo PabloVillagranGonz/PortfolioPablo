@@ -38,8 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (toggle) {
-    toggle.addEventListener("click", () => toggleMenu(true));
-    
+    toggle.addEventListener("click", () => {
+      const isOpen = sideMenu?.classList.contains("active");
+      toggleMenu(!isOpen);
+    });
+
     if (closeBtn) {
       closeBtn.addEventListener("click", () => toggleMenu(false));
     }

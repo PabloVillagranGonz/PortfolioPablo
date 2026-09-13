@@ -24,7 +24,7 @@
       }
     });
   }, {
-    threshold: 0.12
+    threshold: 0
   });
 
   document.addEventListener('DOMContentLoaded', function () {

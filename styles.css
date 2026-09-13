@@ -292,7 +292,7 @@ body {
     border-left: 1px solid var(--border);
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    padding: 20px;
+    padding: calc(var(--header-h, 72px) + 12px) 20px 20px;
     gap: 16px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;

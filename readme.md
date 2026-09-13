@@ -62,6 +62,14 @@ Portfolio/
     └── project-detail.css  # Estilos compartidos
 ```
 
+## 🔄 Mantenimiento reciente
+
+**Septiembre 2026** — QA completa de responsive design (móvil, tablet y desktop) en las 5 páginas del sitio:
+- Menú móvil: corregido el botón de cierre y el overlay del panel lateral.
+- Páginas de proyecto (Laboral, PentaNet): corregido un bug que dejaba el contenido invisible en móvil hasta hacer scroll.
+- Modo claro/oscuro: la preferencia ahora persiste correctamente al navegar entre páginas.
+- Ajustes menores de imágenes y de cache-busting de estilos.
+
 ## 📄 Licencia
 
 © Pablo Villagrán González — Todos los derechos reservados.

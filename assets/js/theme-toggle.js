@@ -23,11 +23,7 @@
 
   function storeTheme(theme) {
     try {
-      if (theme === 'dark') {
-        localStorage.setItem(storageKey, 'dark');
-      } else {
-        localStorage.removeItem(storageKey);
-      }
+      localStorage.setItem(storageKey, theme === 'dark' ? 'dark' : 'light');
     } catch (e) {}
   }
 

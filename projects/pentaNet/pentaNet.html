@@ -12,12 +12,13 @@
     content="PentaNet — Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css?v=4">
+  <link rel="stylesheet" href="../../styles.css?v=6">
   <!-- Estilos específicos del proyecto -->
-  <link rel="stylesheet" href="../project-detail.css">
+  <link rel="stylesheet" href="../project-detail.css?v=3">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../assets/img/foto.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
@@ -25,7 +26,9 @@
   <meta property="og:description"
     content="Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
   <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/projects/pentaNet/pentaNet.html">
-  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/gestor2.webp">
+  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/og-pentanet.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Pablo Villagrán Portfolio">
   <link rel="canonical" href="https://pablovillagrangonz.github.io/PortfolioPablo/projects/pentaNet/pentaNet.html">
 
@@ -34,7 +37,7 @@
   <meta name="twitter:title" content="PentaNet — Gestión académica full-stack">
   <meta name="twitter:description"
     content="Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
-  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/gestor2.webp">
+  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/og-pentanet.jpg">
 
   <script src="../../assets/js/theme-toggle.js?v=2"></script>
 
@@ -42,6 +45,47 @@
 
 <body class="project-detail-page">
   <div class="progress-bar"></div>
+  <!-- NAV -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../../index.html#inicio">Pablo Villagrán González</a>
+
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="../../index.html#inicio">Inicio</a>
+        <a href="../../index.html#sobre-mi">Sobre mí</a>
+        <a href="../../index.html#proyectos">Proyectos</a>
+        <a href="../../index.html#experiencia">Experiencia</a>
+        <a href="../../index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta"><a href="../../index.html#contacto" class="btn">Contactar</a></div>
+
+      <!-- Toggle tema -->
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+
+      <!-- Hamburger Menu Toggle (móvil) -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="../../index.html#inicio">Inicio</a>
+    <a href="../../index.html#sobre-mi">Sobre mí</a>
+    <a href="../../index.html#proyectos">Proyectos</a>
+    <a href="../../index.html#experiencia">Experiencia</a>
+    <a href="../../index.html#contacto">Contacto</a>
+    <a href="../../assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
+
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
@@ -66,7 +110,7 @@
           <div class="text-right">
             <h1 id="pentanet-title" class="m-0 mb-8">PentaNet</h1>
             <p class="muted small m-0 mb-12">
-              Plataforma integral de gestión académica — Flutter · Spring Boot · API REST · JWT
+              Plataforma integral de gestión académica — Flutter · Spring Boot · APIs REST · JWT
             </p>
           </div>
 
@@ -119,7 +163,7 @@
             hereda directamente asignaturas, horarios y profesores, sin configuraciones manuales adicionales.
           </p>
 
-          <h3>Tecnologías & stack</h3>
+          <h3>Tecnologías y stack</h3>
           <div class="tech-list mt-8">
             <span class="tech-pill tech-flutter">Flutter</span>
             <span class="tech-pill tech-dart">Dart</span>
@@ -318,9 +362,9 @@
 
         <!-- COLUMNA LATERAL -->
         <aside class="panel card p-18">
-          <h3>Tecnologías & rol</h3>
+          <h3>Tecnologías y rol</h3>
           <p class="muted">
-            Rol: diseño, arquitectura y desarrollo full-stack del proyecto.
+            Rol: diseño, arquitectura y desarrollo full-stack, en solitario. Proyecto final del DAM.
           </p>
 
           <div class="tech-list mt-8">
@@ -331,7 +375,7 @@
           </div>
 
           <h3 class="mt-14">Fecha</h3>
-          <p class="muted">2024 – 2025</p>
+          <p class="muted">2024 – 2026</p>
 
           <h3 class="mt-12">Enlaces</h3>
           <div class="flex-col gap-8 mt-6">
@@ -359,6 +403,7 @@
   </div>
 
   <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/mobile-menu.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
   <script src="../../assets/js/gallery-toggle.js"></script>
 </body>

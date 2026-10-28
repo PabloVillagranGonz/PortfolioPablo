@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
+  // Muestra el estado del formulario; el color lo pone el CSS según el tipo (error / success)
+  function setStatus(text, type) {
+    status.textContent = text;
+    status.classList.remove('is-error', 'is-success');
+    if (type) status.classList.add('is-' + type);
+  }
+
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
@@ -24,34 +31,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ⏱️ Anti-spam por tiempo (mínimo 2s)
     if (Date.now() - formLoadedAt < 2000) {
-      status.textContent = 'Envío demasiado rápido.';
+      setStatus('Envío demasiado rápido.', 'error');
       return;
     }
 
     // 🕷️ Honeypot
     if (form.phone.value.trim() !== '') {
-      status.textContent = 'Formulario inválido.';
+      setStatus('Formulario inválido.', 'error');
       return;
     }
 
     // Validaciones
     if (name.length < 2) {
-      status.textContent = 'El nombre es demasiado corto.';
+      setStatus('El nombre es demasiado corto.', 'error');
       return;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      status.textContent = 'Email no válido.';
+      setStatus('Email no válido.', 'error');
       return;
     }
 
     if (message.length < 10) {
-      status.textContent = 'El mensaje es demasiado corto.';
+      setStatus('El mensaje es demasiado corto.', 'error');
       return;
     }
 
     if (!form.consent.checked) {
-      status.textContent = 'Debes aceptar la política de privacidad para enviar el mensaje.';
+      setStatus('Debes aceptar la política de privacidad para enviar el mensaje.', 'error');
       return;
     }
 
@@ -61,17 +68,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sendBtn.disabled = true;
     sendBtn.textContent = 'Enviando...';
-    status.textContent = '';
+    setStatus('');
 
     try {
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
       form.reset();
-      status.style.color = '';
-      status.textContent = 'Mensaje enviado correctamente. ¡Gracias!';
+      setStatus('Mensaje enviado correctamente. ¡Gracias!', 'success');
     } catch (err) {
       console.error(err);
-      status.style.color = '#ffbaba';
-      status.textContent = 'Error al enviar el mensaje. Inténtalo más tarde.';
+      setStatus('Error al enviar el mensaje. Inténtalo más tarde o escríbeme a pablovillagrangonz@gmail.com.', 'error');
     }
 
     sendBtn.disabled = false;

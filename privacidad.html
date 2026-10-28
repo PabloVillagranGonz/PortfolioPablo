@@ -13,11 +13,12 @@
   <meta name="robots" content="noindex, follow">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/foto.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="styles.css?v=4">
-  <link rel="stylesheet" href="projects/project-detail.css">
+  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="projects/project-detail.css?v=3">
 
   <script src="assets/js/theme-toggle.js?v=2"></script>
 
@@ -25,6 +26,47 @@
 
 <body class="project-detail-page">
   <div class="progress-bar"></div>
+  <!-- NAV -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html#inicio">Pablo Villagrán González</a>
+
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta"><a href="index.html#contacto" class="btn">Contactar</a></div>
+
+      <!-- Toggle tema -->
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+
+      <!-- Hamburger Menu Toggle (móvil) -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="index.html#inicio">Inicio</a>
+    <a href="index.html#sobre-mi">Sobre mí</a>
+    <a href="index.html#proyectos">Proyectos</a>
+    <a href="index.html#experiencia">Experiencia</a>
+    <a href="index.html#contacto">Contacto</a>
+    <a href="assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
+
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
@@ -110,6 +152,7 @@
     </footer>
   </main>
 
+  <script src="assets/js/mobile-menu.js"></script>
   <script src="assets/js/scroll-reveal.js"></script>
 </body>
 

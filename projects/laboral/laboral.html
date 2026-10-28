@@ -12,12 +12,13 @@
     content="Laboral — Sistema full-stack de gestión de pedidos para laboratorio dental. Angular y Spring Boot con notificaciones en tiempo real vía WebSocket, roles y JWT.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css?v=4">
+  <link rel="stylesheet" href="../../styles.css?v=6">
   <!-- Estilos específicos del proyecto -->
-  <link rel="stylesheet" href="../project-detail.css">
+  <link rel="stylesheet" href="../project-detail.css?v=3">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../assets/img/foto.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
@@ -25,7 +26,9 @@
   <meta property="og:description"
     content="Sistema full-stack de gestión de pedidos para laboratorio dental. Angular y Spring Boot con notificaciones en tiempo real vía WebSocket, roles y JWT.">
   <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/projects/laboral/laboral.html">
-  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laboral/portada-cover.webp">
+  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laboral/og-laboral.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Pablo Villagrán Portfolio">
   <link rel="canonical" href="https://pablovillagrangonz.github.io/PortfolioPablo/projects/laboral/laboral.html">
 
@@ -34,7 +37,7 @@
   <meta name="twitter:title" content="Laboral — Gestión de pedidos para laboratorio dental">
   <meta name="twitter:description"
     content="Sistema full-stack de gestión de pedidos para laboratorio dental. Angular y Spring Boot con notificaciones en tiempo real vía WebSocket, roles y JWT.">
-  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laboral/portada-cover.webp">
+  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laboral/og-laboral.jpg">
 
   <script src="../../assets/js/theme-toggle.js?v=2"></script>
 
@@ -42,6 +45,47 @@
 
 <body class="project-detail-page">
   <div class="progress-bar"></div>
+  <!-- NAV -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../../index.html#inicio">Pablo Villagrán González</a>
+
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="../../index.html#inicio">Inicio</a>
+        <a href="../../index.html#sobre-mi">Sobre mí</a>
+        <a href="../../index.html#proyectos">Proyectos</a>
+        <a href="../../index.html#experiencia">Experiencia</a>
+        <a href="../../index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta"><a href="../../index.html#contacto" class="btn">Contactar</a></div>
+
+      <!-- Toggle tema -->
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+
+      <!-- Hamburger Menu Toggle (móvil) -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="../../index.html#inicio">Inicio</a>
+    <a href="../../index.html#sobre-mi">Sobre mí</a>
+    <a href="../../index.html#proyectos">Proyectos</a>
+    <a href="../../index.html#experiencia">Experiencia</a>
+    <a href="../../index.html#contacto">Contacto</a>
+    <a href="../../assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
+
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
@@ -90,7 +134,7 @@
             <strong>laboratorio dental</strong>, encargada de digitalizar por completo el flujo de pedidos entre
             el laboratorio y las clínicas que le envían trabajo. Sustituye la clásica pizarra física por un panel
             en tiempo real, con <strong>frontend en Angular</strong> y <strong>backend en Spring Boot</strong>.
-            Proyecto real para cliente, actualmente en producción.
+            Actualmente en producción.
           </p>
 
           <h3>Objetivo del proyecto</h3>
@@ -165,7 +209,7 @@
             <li>Comunicación en tiempo real con WebSocket/STOMP protegida por JWT.</li>
             <li>Diseño de un modelo de permisos por rol a nivel de dato (un técnico solo actúa sobre lo suyo), no solo de pantalla.</li>
             <li>Migración progresiva de Angular a lo largo de varias versiones mayores sin parar el desarrollo.</li>
-            <li>Trabajo con un cliente real: iterar sobre un flujo de trabajo (pizarra física) ya existente en vez de partir de cero.</li>
+            <li>Digitalizar un flujo de trabajo ya existente (la pizarra física) en vez de partir de cero.</li>
           </ul>
 
           <!-- GALERÍA -->
@@ -208,9 +252,9 @@
 
         <!-- COLUMNA LATERAL -->
         <aside class="panel card p-18">
-          <h3>Tecnologías & rol</h3>
+          <h3>Tecnologías y rol</h3>
           <p class="muted">
-            Rol: diseño, arquitectura y desarrollo full-stack del proyecto para el cliente.
+            Rol: diseño, arquitectura y desarrollo full-stack, en solitario.
           </p>
 
           <div class="tech-list mt-8">
@@ -222,12 +266,11 @@
           </div>
 
           <h3 class="mt-14">Fecha</h3>
-          <p class="muted">2026 – Actualidad</p>
+          <p class="muted">Jun 2026 – Actualidad</p>
 
           <h3 class="mt-12">Nota</h3>
           <p class="muted small">
-            Proyecto real para un cliente en activo. Por confidencialidad, el nombre del negocio no se muestra y
-            el código no es público.
+            El código de este proyecto es privado.
           </p>
         </aside>
 
@@ -248,6 +291,7 @@
   </div>
 
   <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/mobile-menu.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
   <script src="../../assets/js/gallery-toggle.js"></script>
 </body>

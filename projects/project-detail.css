@@ -3,9 +3,9 @@
    Diseño unificado para todo el portfolio
 =========================================================== */
 
-/* Sobrescribimos el padding del wrap para el detalle */
+/* El header es sticky y ya ocupa su hueco: solo dejamos un respiro bajo él */
 main.wrap {
-  padding-top: calc(var(--header-h, 72px) + 24px) !important;
+  padding-top: 24px;
 }
 
 /* ============================
@@ -240,3 +240,5 @@ main.wrap {
   .lightbox-prev { left: 10px; }
   .lightbox-next { right: 10px; }
 }
+/* URLs y correos largos no deben provocar scroll horizontal en móvil */
+.detail-section { overflow-wrap: anywhere; }

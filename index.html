@@ -11,11 +11,14 @@
     content="Portafolio de Pablo Villagrán González — Desarrollador Full-Stack: Java y Spring Boot, Angular y Flutter.">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/foto.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/foto.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+  <!-- Tema: se carga en el <head> para aplicar el modo oscuro antes de pintar (sin destello blanco) -->
+  <script src="assets/js/theme-toggle.js?v=2"></script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=6">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -94,11 +97,18 @@
             Ver CV
           </a>
         </div>
+        <div class="hero-meta">
+          <span class="availability"><span class="availability-dot" aria-hidden="true"></span>Disponible para trabajar · Valladolid</span>
+          <span class="hero-social">
+            <a href="https://www.linkedin.com/in/pablo-villagrán-gonzález-98b4683a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            <a href="https://github.com/PabloVillagranGonz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          </span>
+        </div>
       </div>
 
       <div class="hero-right">
         <div class="card-photo">
-          <img class="avatar" src="assets/img/foto.png" fetchpriority="high" alt="Foto de Pablo Villagrán González">
+          <img class="avatar" src="assets/img/foto.webp" width="554" height="700" fetchpriority="high" alt="Foto de Pablo Villagrán González">
         </div>
       </div>
     </section>
@@ -130,43 +140,72 @@
     <section id="tecnologias" class="section">
       <h2>Tecnologías</h2>
 
-      <div class="tech-list mt-16">
-
-        <!-- Backend -->
-        <span class="tech-pill tech-java">Java</span>
-        <span class="tech-pill tech-spring">Spring Boot</span>
-        <span class="tech-pill tech-hibernate">Hibernate / JPA</span>
-        <span class="tech-pill tech-rest">APIs REST</span>
-        <span class="tech-pill tech-jwt">JWT</span>
-        <span class="tech-pill tech-websocket">WebSocket</span>
-        <span class="tech-pill tech-swagger">Swagger</span>
-
-        <!-- Frontend -->
-        <span class="tech-pill tech-angular">Angular</span>
-        <span class="tech-pill tech-typescript">TypeScript</span>
-        <span class="tech-pill tech-react">React</span>
-        <span class="tech-pill tech-tailwind">Tailwind</span>
-        <span class="tech-pill tech-html">HTML</span>
-        <span class="tech-pill tech-css">CSS</span>
-        <span class="tech-pill tech-js">JavaScript</span>
-
-        <!-- Móvil -->
-        <span class="tech-pill tech-flutter">Flutter</span>
-        <span class="tech-pill tech-dart">Dart</span>
-
-        <!-- Bases de datos -->
-        <span class="tech-pill tech-mysql">MySQL</span>
-        <span class="tech-pill tech-mongodb">MongoDB</span>
-
-        <!-- Herramientas -->
-        <span class="tech-pill tech-git">Git y GitHub</span>
+      <div class="skills-grid">
+        <article class="skill-group">
+          <div class="skill-head">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><line x1="6" y1="7" x2="6.01" y2="7"/><line x1="6" y1="17" x2="6.01" y2="17"/></svg></span>
+            <div>
+              <h3>Backend</h3>
+              <p>APIs REST seguras, persistencia y tiempo real</p>
+            </div>
+            <span class="skill-badge">Principal</span>
+          </div>
+          <ul class="skill-chips">
+            <li class="chip tech-java">Java</li>
+            <li class="chip tech-spring">Spring Boot</li>
+            <li class="chip tech-hibernate">Hibernate / JPA</li>
+            <li class="chip tech-rest">APIs REST</li>
+            <li class="chip tech-jwt">JWT</li>
+            <li class="chip tech-websocket">WebSocket</li>
+            <li class="chip tech-swagger">Swagger</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <div class="skill-head">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span>
+            <div>
+              <h3>Frontend</h3>
+              <p>Interfaces con Angular a nivel profesional</p>
+            </div>
+          </div>
+          <ul class="skill-chips">
+            <li class="chip tech-angular">Angular</li>
+            <li class="chip tech-typescript">TypeScript</li>
+            <li class="chip tech-react">React</li>
+            <li class="chip tech-tailwind">Tailwind</li>
+            <li class="chip tech-html">HTML</li>
+            <li class="chip tech-css">CSS</li>
+            <li class="chip tech-js">JavaScript</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <div class="skill-head">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></span>
+            <div>
+              <h3>Móvil</h3>
+              <p>Apps multiplataforma conectadas a mis backends</p>
+            </div>
+          </div>
+          <ul class="skill-chips">
+            <li class="chip tech-flutter">Flutter</li>
+            <li class="chip tech-dart">Dart</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <div class="skill-head">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span>
+            <div>
+              <h3>Datos y herramientas</h3>
+              <p>Bases de datos y control de versiones</p>
+            </div>
+          </div>
+          <ul class="skill-chips">
+            <li class="chip tech-mysql">MySQL</li>
+            <li class="chip tech-mongodb">MongoDB</li>
+            <li class="chip tech-git">Git y GitHub</li>
+          </ul>
+        </article>
       </div>
-
-      <p class="muted mt-16">
-        Backend con Spring Boot e Hibernate/JPA: APIs REST seguras con autenticación JWT, documentadas con Swagger
-        y con comunicación en tiempo real por WebSocket. Experiencia profesional en frontend con Angular y TypeScript,
-        además de proyectos en React con Tailwind. Desarrollo multiplataforma con Flutter y bases de datos MySQL y MongoDB.
-      </p>
     </section>
 
     <!-- PROYECTOS -->
@@ -186,6 +225,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3>Laboral — Gestión de pedidos para laboratorio dental</h3>
+              <p class="project-context">Jun 2026 – Actualidad · En solitario · En producción</p>
               <p class="muted small">
                 Aplicación <strong>full-stack</strong> para laboratorios dentales con Angular y Spring Boot.
               </p>
@@ -195,7 +235,7 @@
               Sustituye la pizarra física de un laboratorio dental por un panel digital en tiempo real.
               Pizarra de pedidos con vistas de tabla, Kanban, calendario y por técnico,
               <strong>notificaciones automáticas por WebSocket</strong> ante pedidos vencidos o pruebas devueltas,
-              y control de acceso por roles (administrador / técnico). Proyecto real para cliente, en producción.
+              y control de acceso por roles (administrador / técnico).
             </p>
 
             <div class="project-meta">
@@ -208,6 +248,7 @@
               </div>
 
               <div class="project-actions">
+                <span class="btn-private" title="El código de este proyecto no es público"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Código privado</span>
                 <a class="btn-primary" href="projects/laboral/laboral.html">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
               </div>
             </div>
@@ -223,6 +264,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3>PentaNet — Plataforma de Gestión Académica</h3>
+              <p class="project-context">2024 – 2026 · Proyecto final del DAM · En solitario</p>
               <p class="muted small">
                 Aplicación <strong>full-stack</strong> para centros educativos con Flutter y Spring Boot.
               </p>
@@ -264,6 +306,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3>La Liga Rural Pride — Web app para grupo de música</h3>
+              <p class="project-context">2025 – Actualidad · En solitario</p>
               <p class="muted small">Single Page Application (SPA) en React con Tailwind CSS y componentes accesibles de
                 Radix UI.</p>
             </div>
@@ -455,12 +498,10 @@
     integrity="sha384-91xU8aqqhiXDWyGdT9UafmQiFFtK+Utp9IXVnNe5jYTL+8mM2WowIPQT3GWFJUdY"
     crossorigin="anonymous"></script>
   <!-- Tu script separado -->
-  <script src="assets/emailJS/email.js"></script>
+  <script src="assets/emailJS/email.js?v=2"></script>
 
   <!-- Mobile Menu + Scroll Animations -->
   <script src="assets/js/mobile-menu.js"></script>
-  <!-- Theme Toggle -->
-  <script src="assets/js/theme-toggle.js?v=2"></script>
   <!-- Scroll Reveal + Progress Bar -->
   <script src="assets/js/scroll-reveal.js"></script>
 

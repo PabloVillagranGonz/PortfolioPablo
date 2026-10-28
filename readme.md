@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/foto.png" alt="Pablo Villagrán González" width="120">
+  <img src="assets/img/apple-touch-icon.png" alt="Pablo Villagrán González" width="120">
 </p>
 
 <h1 align="center">Pablo Villagrán González — Portfolio</h1>
@@ -33,7 +33,7 @@ Desarrollador full-stack con base en **Java y Spring Boot** y experiencia profes
 ## 🚀 Proyectos destacados
 
 ### 🦷 [Laboral](projects/laboral/laboral.html)
-Sistema **full-stack** de gestión de pedidos para laboratorio dental (proyecto real para cliente).
+Sistema **full-stack** de gestión de pedidos para laboratorio dental (en producción).
 Pizarra digital en tiempo real (tabla, Kanban, calendario, por técnico), notificaciones automáticas vía WebSocket y control de acceso por roles.
 > Angular · Spring Boot · MySQL · JWT · WebSocket
 
@@ -57,6 +57,7 @@ Portfolio/
 │   ├── js/                 # Scripts (lightbox, menú, tema)
 │   ├── emailJS/            # Integración EmailJS
 │   └── archivos/           # CV descargable
+├── sitemap.xml             # Mapa del sitio para buscadores
 └── projects/
     ├── laboral/            # Detalle Laboral
     ├── pentaNet/           # Detalle PentaNet (Inc. Gestión de Aulas)
@@ -77,6 +78,10 @@ Portfolio/
 - Hero en tablet/móvil: foto junto al saludo; header de tablet en una sola línea.
 - Trayectoria: fechas con meses en texto, descripción plegable por entrada y formato uniforme (puesto · empresa/centro · ciudad).
 - Perfil unificado como Full-Stack, tecnologías alineadas con los proyectos y CV renombrado a `PabloVillagran_CV.pdf`.
+- Tecnologías agrupadas en tarjetas por categoría (Backend, Frontend, Móvil, Datos y herramientas).
+- Mismo header y menú en todas las páginas; contexto (fecha y autoría) en cada proyecto.
+- Rendimiento: foto del hero en WebP (de 4,3 MB a 31 KB) y tema aplicado antes de pintar.
+- SEO y accesibilidad: `sitemap.xml`, imágenes JPG para compartir en redes, contraste mínimo 4.5:1 en etiquetas y limpieza de CSS.
 
 ## 📄 Licencia
 

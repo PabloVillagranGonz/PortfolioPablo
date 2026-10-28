@@ -11,20 +11,23 @@
     content="La Liga — Página web para grupo musical. Diseño responsive, galería, contacto con EmailJS.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css?v=4">
+  <link rel="stylesheet" href="../../styles.css?v=6">
 
   <!-- Estilos específicos de páginas de proyecto -->
-  <link rel="stylesheet" href="../project-detail.css">
+  <link rel="stylesheet" href="../project-detail.css?v=3">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../assets/img/foto.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="La Liga Rural Pride — Web para grupo musical">
   <meta property="og:description" content="Página web para grupo musical. Diseño responsive, galería y contacto con EmailJS.">
   <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/projects/laliga/ligaweb.html">
-  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laliga/portada-cover.webp">
+  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laliga/og-laliga.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Pablo Villagrán Portfolio">
   <link rel="canonical" href="https://pablovillagrangonz.github.io/PortfolioPablo/projects/laliga/ligaweb.html">
 
@@ -32,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="La Liga Rural Pride — Web para grupo musical">
   <meta name="twitter:description" content="Página web para grupo musical. Diseño responsive, galería y contacto con EmailJS.">
-  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laliga/portada-cover.webp">
+  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/laliga/og-laliga.jpg">
 
   <script src="../../assets/js/theme-toggle.js?v=2"></script>
 
@@ -40,6 +43,47 @@
 
 <body class="project-detail-page">
   <div class="progress-bar"></div>
+  <!-- NAV -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../../index.html#inicio">Pablo Villagrán González</a>
+
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="../../index.html#inicio">Inicio</a>
+        <a href="../../index.html#sobre-mi">Sobre mí</a>
+        <a href="../../index.html#proyectos">Proyectos</a>
+        <a href="../../index.html#experiencia">Experiencia</a>
+        <a href="../../index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta"><a href="../../index.html#contacto" class="btn">Contactar</a></div>
+
+      <!-- Toggle tema -->
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+
+      <!-- Hamburger Menu Toggle (móvil) -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="../../index.html#inicio">Inicio</a>
+    <a href="../../index.html#sobre-mi">Sobre mí</a>
+    <a href="../../index.html#proyectos">Proyectos</a>
+    <a href="../../index.html#experiencia">Experiencia</a>
+    <a href="../../index.html#contacto">Contacto</a>
+    <a href="../../assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
+
   <main class="wrap" role="main">
 
     <!-- Breadcrumb -->
@@ -155,8 +199,8 @@
 
         <!-- Columna derecha -->
         <aside class="panel card p-18">
-          <h3>Tecnologías & rol</h3>
-          <p class="muted">Rol: Desarrollo frontend completo de la SPA.</p>
+          <h3>Tecnologías y rol</h3>
+          <p class="muted">Rol: desarrollo frontend completo de la SPA, en solitario.</p>
 
           <div class="tech-list mt-8">
             <span class="tech-pill tech-react">React</span>
@@ -165,7 +209,7 @@
           </div>
 
           <h3 class="mt-14">Fecha</h3>
-          <p class="muted">2026</p>
+          <p class="muted">2025 – Actualidad</p>
           <h3 class="mt-12">Enlaces</h3>
           <div class="flex-col gap-8 mt-6">
             <a class="btn-repo" href="https://github.com/laliga-ruralpride/La-Liga-Rural-Pride" target="_blank"
@@ -197,6 +241,7 @@
   </div>
 
   <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/mobile-menu.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
   <script src="../../assets/js/gallery-toggle.js"></script>
 </body>

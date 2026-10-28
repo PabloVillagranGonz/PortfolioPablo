@@ -4,22 +4,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no" />
 
   <title>Pablo Villagrán González — Portafolio</title>
   <meta name="description"
-    content="Portafolio de Pablo Villagrán González — Desarrollador Backend especializado en Java, Spring Boot y Flutter.">
+    content="Portafolio de Pablo Villagrán González — Desarrollador Full-Stack: Java y Spring Boot, Angular y Flutter.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/foto.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/foto.png">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pablo Villagrán — Desarrollador Full-Stack">
-  <meta property="og:description" content="Portfolio profesional con proyectos Flutter y Spring Boot.">
+  <meta property="og:description" content="Portfolio profesional con proyectos en Spring Boot, Angular y Flutter.">
   <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/">
   <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/og-cover.jpg">
   <meta property="og:image:width" content="1200">
@@ -30,7 +31,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pablo Villagrán — Desarrollador Full-Stack">
-  <meta name="twitter:description" content="Portfolio profesional con proyectos Flutter y Spring Boot.">
+  <meta name="twitter:description" content="Portfolio profesional con proyectos en Spring Boot, Angular y Flutter.">
   <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/og-cover.jpg">
 
 </head>
@@ -40,7 +41,7 @@
   <!-- NAV -->
   <header class="header">
     <div class="wrap nav">
-      <div class="brand">Pablo Villagrán González</div>
+      <a class="brand" href="#inicio">Pablo Villagrán González</a>
 
       <nav class="nav-links" aria-label="Menú principal">
         <a href="#inicio">Inicio</a>
@@ -53,7 +54,7 @@
       <div class="cta"><a href="#contacto" class="btn">Contactar</a></div>
 
       <!-- Toggle tema -->
-      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
 
       <!-- Hamburger Menu Toggle (móvil) -->
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -75,7 +76,7 @@
     <a href="#proyectos">Proyectos</a>
     <a href="#experiencia">Experiencia</a>
     <a href="#contacto">Contacto</a>
-    <a href="assets/archivos/PabloVillagran_Cv2.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+    <a href="assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
   </nav>
 
   <main class="wrap">
@@ -84,12 +85,12 @@
       <div class="hero-left">
         <h1>Hola, soy <span class="accent">Pablo Villagrán González</span></h1>
         <p class="lead">
-          <strong>Desarrollador Backend</strong> especializado en Java y Spring Boot ·
-          APIs REST · Bases de datos SQL · Flutter
+          <strong>Desarrollador Full-Stack</strong> con base en Java y Spring Boot ·
+          Angular · Flutter · APIs REST · Bases de datos SQL
         </p>
         <div class="actions">
           <a class="btn-outline" href="#proyectos">Ver proyectos</a>
-          <a class="btn" href="assets/archivos/PabloVillagran_Cv2.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="btn" href="assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">
             Ver CV
           </a>
         </div>
@@ -97,7 +98,7 @@
 
       <div class="hero-right">
         <div class="card-photo">
-          <img class="avatar" src="assets/img/foto.png" loading="lazy" alt="Foto de Pablo Villagrán González">
+          <img class="avatar" src="assets/img/foto.png" fetchpriority="high" alt="Foto de Pablo Villagrán González">
         </div>
       </div>
     </section>
@@ -107,19 +108,21 @@
       <h2>Sobre mí</h2>
 
       <p class="muted">
-        Desarrollador con un fuerte enfoque en <strong>Backend (Java y Spring Boot)</strong>,
-        con experiencia reciente como <strong>Frontend en Luce IT</strong> (Valladolid).
-        Tengo experiencia en el diseño de APIs REST seguras, bases de datos SQL y desarrollo
-        multiplataforma con <strong>Flutter</strong>. Me apasiona crear soluciones que no solo funcionen,
-        sino que sean escalables y fáciles de mantener.
+        Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y desarrollador
+        <strong>full-stack con base en backend</strong>: construyo APIs REST con <strong>Java y Spring Boot</strong>,
+        con autenticación JWT y una arquitectura por capas limpia y fácil de mantener.
       </p>
 
       <p class="muted">
-        Mi formación en DAM se complementa con la disciplina y constancia adquiridas en mis
-        <strong>estudios profesionales de música</strong> en el Conservatorio de Valladolid.
-        Esta mezcla me permite afrontar retos técnicos con paciencia, atención al detalle y un
-        enfoque orientado a resultados, ya sea trabajando en arquitecturas de software complejas
-        o en interfaces de usuario fluidas con Angular.
+        También trabajo el resto del stack: apps móviles en <strong>Flutter</strong> conectadas a mis propios backends y,
+        en mis prácticas en <strong>Luce IT</strong>, interfaces con <strong>Angular y TypeScript</strong> dentro del
+        equipo de frontend. He trabajado con MySQL y MongoDB, y uso Git en todos mis proyectos. Me importa que el
+        código se entienda y que cada cosa esté en su sitio.
+      </p>
+
+      <p class="muted">
+        Además estudio el <strong>Grado Profesional de Música</strong> (trombón) en el Conservatorio de Valladolid.
+        Compaginarlo con la informática me ha enseñado a ser constante, organizarme bien y cuidar los detalles.
       </p>
     </section>
 
@@ -132,30 +135,37 @@
         <!-- Backend -->
         <span class="tech-pill tech-java">Java</span>
         <span class="tech-pill tech-spring">Spring Boot</span>
-        <span class="tech-pill tech-rest">REST API</span>
+        <span class="tech-pill tech-hibernate">Hibernate / JPA</span>
+        <span class="tech-pill tech-rest">APIs REST</span>
         <span class="tech-pill tech-jwt">JWT</span>
+        <span class="tech-pill tech-websocket">WebSocket</span>
+        <span class="tech-pill tech-swagger">Swagger</span>
 
         <!-- Frontend -->
-        <span class="tech-pill tech-flutter">Flutter</span>
         <span class="tech-pill tech-angular">Angular</span>
+        <span class="tech-pill tech-typescript">TypeScript</span>
+        <span class="tech-pill tech-react">React</span>
+        <span class="tech-pill tech-tailwind">Tailwind</span>
         <span class="tech-pill tech-html">HTML</span>
         <span class="tech-pill tech-css">CSS</span>
         <span class="tech-pill tech-js">JavaScript</span>
 
+        <!-- Móvil -->
+        <span class="tech-pill tech-flutter">Flutter</span>
+        <span class="tech-pill tech-dart">Dart</span>
+
         <!-- Bases de datos -->
         <span class="tech-pill tech-mysql">MySQL</span>
         <span class="tech-pill tech-mongodb">MongoDB</span>
-        <span class="tech-pill tech-sqlite">SQLite</span>
 
-        <!-- Otros -->
-        <span class="tech-pill tech-python">Python</span>
-        <span class="tech-pill tech-android">Android</span>
+        <!-- Herramientas -->
+        <span class="tech-pill tech-git">Git y GitHub</span>
       </div>
 
       <p class="muted mt-16">
-        Experiencia principal en desarrollo backend con Spring Boot y diseño de APIs REST seguras.
-        Conocimientos básicos de Angular para creación de componentes, routing y consumo de APIs.
-        Desarrollo multiplataforma con Flutter y manejo de bases de datos relacionales y no relacionales.
+        Backend con Spring Boot e Hibernate/JPA: APIs REST seguras con autenticación JWT, documentadas con Swagger
+        y con comunicación en tiempo real por WebSocket. Experiencia profesional en frontend con Angular y TypeScript,
+        además de proyectos en React con Tailwind. Desarrollo multiplataforma con Flutter y bases de datos MySQL y MongoDB.
       </p>
     </section>
 
@@ -198,7 +208,7 @@
               </div>
 
               <div class="project-actions">
-                <a class="btn-primary" href="projects/laboral/laboral.html" target="_blank" rel="noopener noreferrer">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a class="btn-primary" href="projects/laboral/laboral.html">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
               </div>
             </div>
           </div>
@@ -233,13 +243,13 @@
                 <span class="tech-pill tech-spring">Spring Boot</span>
                 <span class="tech-pill tech-mysql">MySQL</span>
                 <span class="tech-pill tech-jwt">JWT</span>
-                <span class="tech-pill tech-rest">REST API</span>
+                <span class="tech-pill tech-rest">APIs REST</span>
               </div>
 
               <div class="project-actions">
                 <a class="btn-repo" href="https://github.com/PabloVillagranGonz/PentaNetApi.git" target="_blank"
                   rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio</a>
-                <a class="btn-primary" href="projects/pentaNet/pentaNet.html" target="_blank" rel="noopener noreferrer">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a class="btn-primary" href="projects/pentaNet/pentaNet.html">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
               </div>
             </div>
           </div>
@@ -276,8 +286,7 @@
                   rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio</a>
                 <a class="btn-web" href="https://laliga-ruralpride.github.io/La-Liga-Rural-Pride/" target="_blank"
                   rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Sitio web</a>
-                <a class="btn-primary" href="projects/laliga/ligaweb.html" target="_blank"
-                  rel="noopener noreferrer">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a class="btn-primary" href="projects/laliga/ligaweb.html">Leer más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
               </div>
             </div>
           </div>
@@ -286,102 +295,111 @@
     </section>
 
     <section id="experiencia" class="section experience-timeline" aria-labelledby="experiencia-title">
-      <h2 id="experiencia-title">Experiencia Profesional & Formación Académica</h2>
-      <div class="collapse-wrapper" id="wrapper-experiencia">
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card accent">
-              <h3>Desarrollador Frontend (Prácticas) — Luce IT</h3>
-              <p class="muted">Valladolid · 03/2026 – 16/06/2026</p>
-              <p class="muted">
-                Desarrollo de interfaces de usuario modernas y escalables utilizando <strong>Angular</strong>.
-                Formando parte del equipo de desarrollo frontend, aplicando arquitecturas basadas en componentes y
-                consumo
-                de APIs REST.
-              </p>
-              <ul class="muted mt-10 pl-18">
+      <h2 id="experiencia-title">Experiencia Profesional y Formación Académica</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Mar 2026 – Jun 2026</span>
+            <h3>Desarrollador Frontend (Prácticas)</h3>
+            <p class="muted tl-place">Luce IT · Valladolid</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
+              <ul class="muted pl-18">
                 <li>Desarrollo de componentes reutilizables con Angular y TypeScript.</li>
-                <li>Maquetación responsive and precisa utilizando HTML5 y CSS3.</li>
-                <li>Integración de servicios backend y gestión de estados en el cliente.</li>
-                <li>Trabajo bajo metodologías ágiles en un entorno empresarial real.</li>
+                <li>Maquetación responsive con HTML5 y CSS3.</li>
+                <li>Integración con servicios backend mediante APIs REST y gestión del estado en el cliente.</li>
+                <li>Trabajo con metodologías ágiles dentro del equipo de frontend.</li>
               </ul>
-            </div>
+            </details>
           </div>
+        </div>
 
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card secondary">
-              <h3>Estudios Profesionales de Música — Conservatorio de Valladolid</h3>
-              <p class="muted">Especialidad en trombón · Actualidad</p>
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Sep 2022 – Actualidad</span>
+            <h3>Estudios Profesionales de Música — Trombón</h3>
+            <p class="muted tl-place">Conservatorio Profesional de Música · Valladolid</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
               <p class="muted">
                 Formación artística paralela a los estudios técnicos, desarrollando disciplina,
                 constancia y capacidad de trabajo a largo plazo. Esta etapa refuerza mi capacidad de
                 concentración y el trabajo en equipo dentro de agrupaciones musicales.
               </p>
-            </div>
+            </details>
           </div>
+        </div>
 
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card">
-              <h3>Grado Superior — Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
-              <p class="muted">IES Ribera de Castilla · 09/2023 – 02/2026</p>
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Sep 2023 – Jun 2026</span>
+            <h3>Grado Superior — Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <p class="muted tl-place">IES Ribera de Castilla · Valladolid</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
               <p class="muted">
-                Formación especializada en desarrollo backend y multiplataforma.
-                Programación en Java, diseño de APIs REST con Spring Boot, bases de datos SQL,
-                desarrollo móvil con Flutter y aplicación de buenas prácticas de arquitectura y patrones de diseño.
+                Formación en desarrollo backend con Java y Spring Boot, desarrollo móvil con Kotlin y Flutter,
+                bases de datos relacionales y no relacionales, y diseño de aplicaciones cliente-servidor.
               </p>
-            </div>
+            </details>
           </div>
+        </div>
 
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card">
-              <h3>Técnico Informático — Prácticas</h3>
-              <p class="muted small">3 meses · Soporte técnico en tienda informática</p>
-              <p class="muted">
-                Diagnóstico y reparación de equipos informáticos, mantenimiento de hardware y software,
-                sustitución de componentes y atención directa a clientes.
-                Mejora de capacidades de resolución de incidencias y comunicación técnica.
-              </p>
-            </div>
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Mar 2023 – Jun 2023</span>
+            <h3>Técnico Informático (Prácticas)</h3>
+            <p class="muted tl-place">QR Informática · Valladolid</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
+              <ul class="muted pl-18">
+                <li>Instalación, configuración y mantenimiento de equipos informáticos y sistemas operativos.</li>
+                <li>Soporte técnico a usuarios y resolución de incidencias de hardware y software.</li>
+                <li>Configuración básica de redes y dispositivos periféricos.</li>
+                <li>Administración básica de sistemas y gestión de mantenimiento preventivo.</li>
+              </ul>
+            </details>
           </div>
+        </div>
 
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card">
-              <h3>Grado Medio — Sistemas Microinformáticos y Redes (SMR)</h3>
-              <p class="muted">IES Ribera de Castilla · 09/2021 – 06/2023</p>
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Sep 2021 – Jun 2023</span>
+            <h3>Grado Medio — Sistemas Microinformáticos y Redes (SMR)</h3>
+            <p class="muted tl-place">IES Ribera de Castilla · Valladolid</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
               <p class="muted">
                 Formación en administración de sistemas, redes, mantenimiento de equipos,
                 instalación de sistemas operativos y soporte técnico.
                 Base sólida en infraestructura y funcionamiento interno del software y hardware.
               </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="card">
-              <h3>Operario de Producción</h3>
-              <p class="muted small">4 meses</p>
-              <p class="muted">
-                Trabajo en entorno industrial con cumplimiento estricto de tiempos de producción,
-                coordinación en equipo y adaptación a ritmos exigentes.
-                Desarrollo de responsabilidad, organización y constancia.
-              </p>
-            </div>
+            </details>
           </div>
         </div>
-        <div class="collapse-overlay"></div>
-      </div>
-      <div class="btn-show-more-container mt-20">
-        <button class="btn-show-more" data-label-expanded="Ver menos trayectoria"
-          onclick="toggleGallery('wrapper-experiencia', this)">
-          <span>Ver trayectoria completa</span>
-          <span class="icon">↓</span>
-        </button>
+
+        <div class="timeline-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="card">
+            <span class="tl-date">Jul 2021 – Sep 2021</span>
+            <h3>Operario de Producción</h3>
+            <p class="muted tl-place">Manufacturas Polisac · Nava de la Asunción (Segovia)</p>
+            <details class="tl-details">
+              <summary><span class="tl-more">Ver detalles</span><span class="tl-less">Ver menos</span></summary>
+              <ul class="muted pl-18">
+                <li>Supervisión y mantenimiento de la máquina de sobres de plástico para garantizar su correcto funcionamiento.</li>
+                <li>Control de calidad del producto final, asegurando el cumplimiento de los estándares de producción.</li>
+                <li>Resolución de incidencias técnicas básicas y coordinación con el equipo de mantenimiento.</li>
+                <li>Cumplimiento de normativas de seguridad y eficiencia en el proceso de fabricación.</li>
+              </ul>
+            </details>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -417,11 +435,11 @@
 
         <aside class="contact-info card">
           <p class="muted">Otras formas de contacto</p>
-          <p>📧 <a id="email-link" href="mailto:pablovillagrangonz@gmail.com">pablovillagrangonz@gmail.com</a></p>
-          <p>🔗 <a id="linkedin-link" href="https://www.linkedin.com/in/pablo-villagrán-gonzález-98b4683a1"
+          <p class="ci-row"><svg class="ci-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg> <a id="email-link" href="mailto:pablovillagrangonz@gmail.com">pablovillagrangonz@gmail.com</a></p>
+          <p class="ci-row"><svg class="ci-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> <a id="linkedin-link" href="https://www.linkedin.com/in/pablo-villagrán-gonzález-98b4683a1"
               target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a id="github-link"
               href="https://github.com/PabloVillagranGonz" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-          <p class="muted">Puedes descargar mi CV o escribirme directamente.</p>
+          <p class="ci-row"><svg class="ci-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg> <a href="assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Descargar CV (PDF)</a></p>
         </aside>
       </div>
     </section>
@@ -441,10 +459,8 @@
 
   <!-- Mobile Menu + Scroll Animations -->
   <script src="assets/js/mobile-menu.js"></script>
-  <!-- Toggle de galerías / bloques colapsables -->
-  <script src="assets/js/gallery-toggle.js"></script>
   <!-- Theme Toggle -->
-  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/theme-toggle.js?v=2"></script>
   <!-- Scroll Reveal + Progress Bar -->
   <script src="assets/js/scroll-reveal.js"></script>
 

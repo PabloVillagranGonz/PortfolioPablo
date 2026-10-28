@@ -5,7 +5,7 @@
 <h1 align="center">Pablo Villagrán González — Portfolio</h1>
 
 <p align="center">
-  <strong>Desarrollador Backend</strong> · Java & Spring Boot · Flutter · APIs REST
+  <strong>Desarrollador Full-Stack</strong> · Java y Spring Boot · Angular · Flutter · APIs REST
 </p>
 
 <p align="center">
@@ -18,16 +18,17 @@
 
 ## ⚡ Sobre mí
 
-Desarrollador backend especializado en **Java y Spring Boot**, con experiencia en diseño de APIs REST seguras, bases de datos SQL y desarrollo multiplataforma con **Flutter**. Formación en DAM y estudios profesionales de música en el Conservatorio de Valladolid.
+Desarrollador full-stack con base en **Java y Spring Boot** y experiencia profesional en frontend con **Angular** (Luce IT). Diseño de APIs REST seguras, bases de datos SQL y desarrollo multiplataforma con **Flutter**. Formación en DAM y estudios profesionales de música en el Conservatorio de Valladolid.
 
 ## 🛠️ Stack tecnológico
 
 | Categoría | Tecnologías |
 |-----------|-------------|
-| **Backend** | Java · Spring Boot · REST API · JWT |
-| **Frontend** | Flutter · Angular · HTML · CSS · JavaScript |
-| **Bases de datos** | MySQL · MongoDB · SQLite |
-| **Otros** | Python · Android · EmailJS |
+| **Backend** | Java · Spring Boot · Hibernate / JPA · APIs REST · JWT · WebSocket · Swagger |
+| **Frontend** | Angular · TypeScript · React · Tailwind · HTML · CSS · JavaScript |
+| **Móvil** | Flutter · Dart |
+| **Bases de datos** | MySQL · MongoDB |
+| **Herramientas** | Git · GitHub |
 
 ## 🚀 Proyectos destacados
 
@@ -36,14 +37,14 @@ Sistema **full-stack** de gestión de pedidos para laboratorio dental (proyecto 
 Pizarra digital en tiempo real (tabla, Kanban, calendario, por técnico), notificaciones automáticas vía WebSocket y control de acceso por roles.
 > Angular · Spring Boot · MySQL · JWT · WebSocket
 
-### 🎓 [PentaNet](projects/pentanet/pentanet.html)
+### 🎓 [PentaNet](projects/pentaNet/pentaNet.html)
 Plataforma **full-stack** de gestión académica integral.
 Incluye control de roles (admin, secretaría, profesor, alumno), sistema de reserva de aulas en tiempo real, mensajería interna y expedientes académicos.
-> Flutter · Spring Boot · MySQL · JWT
+> Flutter · Dart · Spring Boot · MySQL · JWT · APIs REST
 
 ### 🎵 [La Liga](projects/laliga/ligaweb.html)
-Web oficial para grupo musical con diseño responsive, galería y formulario de contacto funcional.
-> HTML · CSS · EmailJS
+SPA para grupo musical con secciones de inicio, biografía, calendario, galería y contacto; diseño responsive y componentes reutilizables.
+> React · Tailwind · JavaScript
 
 ## 📂 Estructura del proyecto
 
@@ -57,7 +58,8 @@ Portfolio/
 │   ├── emailJS/            # Integración EmailJS
 │   └── archivos/           # CV descargable
 └── projects/
-    ├── PentaNet/          # Detalle PentaNet (Inc. Gestión de Aulas)
+    ├── laboral/            # Detalle Laboral
+    ├── pentaNet/           # Detalle PentaNet (Inc. Gestión de Aulas)
     ├── laliga/             # Detalle La Liga
     └── project-detail.css  # Estilos compartidos
 ```
@@ -69,6 +71,12 @@ Portfolio/
 - Páginas de proyecto (Laboral, PentaNet): corregido un bug que dejaba el contenido invisible en móvil hasta hacer scroll.
 - Modo claro/oscuro: la preferencia ahora persiste correctamente al navegar entre páginas.
 - Ajustes menores de imágenes y de cache-busting de estilos.
+
+**Octubre 2026** — Revisión de diseño y coherencia de contenido:
+- Tarjetas de proyecto: tecnologías como etiquetas discretas y botones de acción con icono, claramente diferenciados.
+- Hero en tablet/móvil: foto junto al saludo; header de tablet en una sola línea.
+- Trayectoria: fechas con meses en texto, descripción plegable por entrada y formato uniforme (puesto · empresa/centro · ciudad).
+- Perfil unificado como Full-Stack, tecnologías alineadas con los proyectos y CV renombrado a `PabloVillagran_CV.pdf`.
 
 ## 📄 Licencia
 

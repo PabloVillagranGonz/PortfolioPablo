@@ -407,6 +407,7 @@ html[data-theme="dark"] .btn-ghost { color: var(--muted); border-color: rgba(255
 .accent { color: var(--accent); }
 .lead { color: var(--muted); margin: 0 0 18px; max-width: 60ch; }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.actions a { display: inline-flex; align-items: center; padding: 10px 16px; }
 
 /* Card foto por defecto (se mejora más abajo) */
 .card-photo {
@@ -665,6 +666,51 @@ h2 { margin: 0 0 18px; font-size: 22px; }
 }
 .btn-web:hover { filter: brightness(1.05); transform: translateY(-2px); }
 
+/* En las tarjetas de proyecto las tecnologías son etiquetas informativas, no botones:
+   fondo neutro, texto discreto y un punto con el color de la tecnología.
+   Así los botones de acción (con icono y separados por una línea) destacan claramente. */
+.project-meta { display: flex; flex-direction: column; gap: 4px; }
+.tags-inline .tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--bg-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  filter: none;
+  cursor: default;
+}
+.tags-inline .tech-pill::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tech, var(--accent));
+  flex-shrink: 0;
+}
+.tags-inline .tech-pill:hover { transform: none; box-shadow: none; filter: none; }
+/* JWT es negro: en modo oscuro el punto no se vería */
+html[data-theme="dark"] .tags-inline .tech-jwt::before { background: #e5e7eb; }
+
+.project-actions {
+  flex-wrap: wrap;
+  margin-top: 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.project-actions svg { width: 16px; height: 16px; flex-shrink: 0; }
+.project-actions .btn-primary { margin-left: auto; }
+
 /* gallery */
 .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 12px; }
 .gallery img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; display: block; transition: transform .25s ease; }
@@ -672,35 +718,35 @@ h2 { margin: 0 0 18px; font-size: 22px; }
 
 /* ========= TECH PILL COLORS ========= */
 /* Web */
-.tech-html { background: #e34f26; color: #fff; border-color: rgba(227,79,38,0.18); }
-.tech-css { background: #264de4; color: #fff; border-color: rgba(38,77,228,0.18); }
-.tech-js  { background: #f7df1e; color: #111; border-color: rgba(247,223,30,0.18); }
+.tech-html { --tech: #e34f26; background: #e34f26; color: #fff; border-color: rgba(227,79,38,0.18); }
+.tech-css { --tech: #264de4; background: #264de4; color: #fff; border-color: rgba(38,77,228,0.18); }
+.tech-js  { --tech: #f7df1e; background: #f7df1e; color: #111; border-color: rgba(247,223,30,0.18); }
 
 /* Backend / API */
-.tech-java   { background: #f89820; color: #111; border-color: rgba(248,152,32,0.18); }
-.tech-spring { background: #6db33f; color: #fff; border-color: rgba(109,179,63,0.18); }
-.tech-mysql  { background: #00618a; color: #fff; border-color: rgba(0,97,138,0.18); }
-.tech-jwt    { background: #000000; color: #fff; border-color: rgba(0,0,0,0.18); }
-.tech-rest   { background: #6366f1; color: #fff; border-color: rgba(99,102,241,0.18); }
-.tech-websocket { background: #ec4899; color: #fff; border-color: rgba(236,72,153,0.18); }
+.tech-java   { --tech: #f89820; background: #f89820; color: #111; border-color: rgba(248,152,32,0.18); }
+.tech-spring { --tech: #6db33f; background: #6db33f; color: #fff; border-color: rgba(109,179,63,0.18); }
+.tech-mysql  { --tech: #00618a; background: #00618a; color: #fff; border-color: rgba(0,97,138,0.18); }
+.tech-jwt    { --tech: #000000; background: #000000; color: #fff; border-color: rgba(0,0,0,0.18); }
+.tech-rest   { --tech: #6366f1; background: #6366f1; color: #fff; border-color: rgba(99,102,241,0.18); }
+.tech-websocket { --tech: #ec4899; background: #ec4899; color: #fff; border-color: rgba(236,72,153,0.18); }
 
 /* Flutter stack */
-.tech-flutter { background: #02569b; color: #fff; border-color: rgba(2,86,155,0.18); }
-.tech-dart    { background: #00B4AB; color: #fff; border-color: rgba(0,180,171,0.18); }
-.tech-sqlite  { background: #003b57; color: #fff; border-color: rgba(0,59,87,0.18); }
+.tech-flutter { --tech: #02569b; background: #02569b; color: #fff; border-color: rgba(2,86,155,0.18); }
+.tech-dart    { --tech: #00B4AB; background: #00B4AB; color: #fff; border-color: rgba(0,180,171,0.18); }
+.tech-sqlite  { --tech: #003b57; background: #003b57; color: #fff; border-color: rgba(0,59,87,0.18); }
 
 /* Otros lenguajes */
-.tech-python  { background: #3776ab; color: #fff; border-color: rgba(55,118,171,0.18); }
-.tech-android { background: #3ddc84; color: #111; border-color: rgba(61,220,132,0.18); }
-.tech-angular { background: #dd0031; color: #fff; border-color: rgba(221,0,49,0.18); }
-.tech-react   { background: #61dafb; color: #111; border-color: rgba(97,218,251,0.18); }
-.tech-tailwind{ background: #38bdf8; color: #111; border-color: rgba(56,189,248,0.18); }
-.tech-mongodb { background: #47a248; color: #fff; border-color: rgba(71,162,72,0.18); }
+.tech-python  { --tech: #3776ab; background: #3776ab; color: #fff; border-color: rgba(55,118,171,0.18); }
+.tech-android { --tech: #3ddc84; background: #3ddc84; color: #111; border-color: rgba(61,220,132,0.18); }
+.tech-angular { --tech: #dd0031; background: #dd0031; color: #fff; border-color: rgba(221,0,49,0.18); }
+.tech-react   { --tech: #61dafb; background: #61dafb; color: #111; border-color: rgba(97,218,251,0.18); }
+.tech-tailwind{ --tech: #38bdf8; background: #38bdf8; color: #111; border-color: rgba(56,189,248,0.18); }
+.tech-mongodb { --tech: #47a248; background: #47a248; color: #fff; border-color: rgba(71,162,72,0.18); }
 
 /* servicios */
-.tech-provider { background: #00a98f; color: #fff; border-color: rgba(0,169,143,0.18); }
-.tech-bcrypt   { background: #4b5563; color: #fff; border-color: rgba(75,85,99,0.18); }
-.tech-emailjs  { background: #8940fa; color: #fff; border-color: rgba(137,64,250,0.18); }
+.tech-provider { --tech: #00a98f; background: #00a98f; color: #fff; border-color: rgba(0,169,143,0.18); }
+.tech-bcrypt   { --tech: #4b5563; background: #4b5563; color: #fff; border-color: rgba(75,85,99,0.18); }
+.tech-emailjs  { --tech: #8940fa; background: #8940fa; color: #fff; border-color: rgba(137,64,250,0.18); }
 
 .tech-pill:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
 
@@ -798,33 +844,74 @@ h2 { margin: 0 0 18px; font-size: 22px; }
   .projects-section h2 { font-size: 34px; }
 }
 
+/* Tablet y móvil: foto a la izquierda junto al saludo; descripción y CTAs debajo a ancho completo.
+   .hero-left usa display: contents para que sus hijos se coloquen directamente en la rejilla del hero. */
 @media (max-width: 980px) {
-  .hero { grid-template-columns: 1fr; text-align: left; }
+  /* El header es sticky y ya ocupa su hueco: no hace falta compensarlo */
+  main.wrap { padding-top: 32px !important; }
   .contact-grid { grid-template-columns: 1fr; }
-  .card-photo { margin: 18px auto 0; max-width: 320px; padding: 16px; }
-  .avatar { width: 160px; height: 160px; border-radius: 14px; }
+
+  .hero {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "photo title"
+      "lead  lead"
+      "cta   cta";
+    column-gap: 28px;
+    row-gap: 0;
+    padding: 16px 0 40px;
+    text-align: left;
+  }
+  .hero-left { display: contents; }
+  .hero-right { grid-area: photo; }
+  .hero-left h1 { grid-area: title; font-size: 38px; line-height: 1.15; margin: 0; }
+  .hero-left h1 .accent { display: block; }
+  .lead { grid-area: lead; margin: 24px 0 24px; max-width: none; }
+  .actions { grid-area: cta; }
+
+  .card-photo { margin: 0; padding: 0; max-width: none; }
+  .avatar { width: 160px; height: 160px; border-radius: 20px; object-position: center top; animation: none; }
+
+}
+
+/* Header en tablet: sin el botón "Contactar" (ya está el enlace "Contacto") para que quepa en una línea */
+@media (min-width: 769px) and (max-width: 980px) {
+  .cta { display: none !important; }
+  .nav-links { gap: 4px; }
+  .nav-links a { font-size: 15px !important; padding: 8px !important; }
+  #theme-toggle { margin-left: auto; }
 }
 
 @media (max-width: 560px) {
-  .avatar { width: 140px; height: 140px; }
-  .hero-left h1 { font-size: 28px; }
   .projects-section h2 { font-size: 28px; }
 }
 
-/* Hero en móvil: foto arriba, bloque centrado y CTAs a ancho completo */
+/* Móvil: misma estructura, más compacta, y CTAs a ancho completo */
 @media (max-width: 768px) {
-  /* El header es sticky y ya ocupa su hueco: no hace falta compensarlo */
-  main.wrap { padding-top: 28px !important; }
-  .hero { display: flex; flex-direction: column; gap: 20px; text-align: center; padding: 8px 0 40px; }
-  .hero-right { order: -1; }
-  .card-photo { margin: 0 auto; padding: 0; max-width: none; }
-  .avatar { width: 128px; height: 128px; border-radius: 50%; object-position: center top; animation: none; }
-  .hero-left h1 { font-size: 30px; line-height: 1.2; margin-bottom: 14px; }
-  .hero-left h1 .accent { display: block; }
-  .lead { margin: 0 auto 24px; }
+  main.wrap { padding-top: 24px !important; }
+  .hero { column-gap: 16px; padding: 8px 0 36px; }
+  .avatar { width: 96px; height: 96px; border-radius: 50%; }
+  .hero-left h1 { font-size: 26px; }
+  .lead { margin: 18px 0 22px; font-size: 15px; }
   .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .actions a { display: flex; align-items: center; justify-content: center; padding: 12px; }
   .actions .btn-outline { border-color: var(--accent); }
+
+  /* Acciones de proyecto a ancho completo y apiladas, "Leer más" primero */
+  .project-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .project-actions .btn-primary { margin-left: 0; order: -1; padding: 12px 18px; }
+  .project-actions a { padding: 12px 16px; }
+}
+
+@media (max-width: 400px) {
+  /* Que nombre, tema y hamburguesa quepan en una sola línea en móviles estrechos */
+  .brand { font-size: 16px; margin-right: 0; }
+  .nav { gap: 8px; }
+}
+
+@media (max-width: 360px) {
+  .avatar { width: 80px; height: 80px; }
+  .hero-left h1 { font-size: 23px; }
 }
 
 /* Reduce-motion */

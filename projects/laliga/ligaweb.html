@@ -11,10 +11,10 @@
     content="La Liga — Página web para grupo musical. Diseño responsive, galería, contacto con EmailJS.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css?v=6">
+  <link rel="stylesheet" href="../../styles.css?v=7">
 
   <!-- Estilos específicos de páginas de proyecto -->
-  <link rel="stylesheet" href="../project-detail.css?v=3">
+  <link rel="stylesheet" href="../project-detail.css?v=6">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
@@ -88,142 +88,121 @@
 
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="breadcrumb mb-12">
-      <a href="../../index.html" class="muted no-decoration">Portfolio</a>
+      <a href="../../index.html#proyectos" class="muted no-decoration">Proyectos</a>
       <span aria-hidden="true" class="mx-8">›</span>
-      <span aria-current="page">La Liga</span>
+      <span aria-current="page">La Liga Rural Pride</span>
     </nav>
 
     <!-- HERO -->
-    <section class="detail-hero" role="article" aria-labelledby="la-liga-title">
-      <div class="hero-row">
-        <div>
-          <div class="hero-media">
-            <img src="../../assets/img/laliga/portada-cover.webp" alt="La Liga Rural Pride — Portada"
-              loading="lazy">
-          </div>
+    <section class="pd-hero" aria-labelledby="laliga-title">
+      <div class="pd-hero-text">
+        <p class="pd-eyebrow">2025 – Actualidad · En solitario · Publicada</p>
+        <h1 id="laliga-title">La Liga Rural Pride</h1>
+        <p class="pd-tagline">Web oficial de un grupo de música, rehecha como SPA en React con Tailwind CSS.</p>
+        <ul class="skill-chips" aria-label="Tecnologías">
+          <li class="chip tech-react">React</li>
+          <li class="chip tech-tailwind">Tailwind</li>
+          <li class="chip tech-js">JavaScript</li>
+          <li class="chip">Radix UI</li>
+        </ul>
+        <div class="pd-actions">
+          <a class="btn-web" href="https://laliga-ruralpride.github.io/La-Liga-Rural-Pride/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Ver la web</a>
+          <a class="btn-repo" href="https://github.com/laliga-ruralpride/La-Liga-Rural-Pride" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio</a>
         </div>
-
-        <aside class="hero-cta">
-          <div class="text-right">
-            <h1 id="la-liga-title" class="m-0 mb-8">La Liga</h1>
-            <p class="muted small m-0 mb-12">
-              Web app para grupo musical — React, Tailwind CSS y Radix UI
-            </p>
-          </div>
-
-          <div class="flex-col gap-10 w-full">
-            <a class="btn-repo" href="https://github.com/laliga-ruralpride/La-Liga-Rural-Pride"
-              aria-label="Ver repositorio La Liga">
-              Ver repositorio
-            </a>
-
-            <a class="btn-web" href="https://laliga-ruralpride.github.io/La-Liga-Rural-Pride/" target="_blank"
-              rel="noopener noreferrer" aria-label="Ver sitio web La Liga">
-              Ver sitio web
-            </a>
-
-            <a class="btn-primary text-center" href="../../index.html" aria-label="Volver al portfolio">Volver al
-              portfolio</a>
-          </div>
-        </aside>
       </div>
+      <div class="pd-hero-media">
+        <img src="../../assets/img/laliga/portada-cover.webp" alt="La Liga Rural Pride — Foto del grupo" fetchpriority="high">
+      </div>
+    </section>
 
+    <!-- FICHA RÁPIDA -->
+    <dl class="pd-facts">
+      <div><dt>Rol</dt><dd>Frontend, en solitario</dd></div>
+      <div><dt>Periodo</dt><dd>2025 – Actualidad</dd></div>
+      <div><dt>Tipo</dt><dd>Single Page Application</dd></div>
+      <div><dt>Estado</dt><dd>Publicada</dd></div>
+    </dl>
 
-      <!-- GRID DE CONTENIDO -->
-      <div class="detail-grid">
+    <div class="pd-body">
+      <section class="pd-section" id="resumen" aria-labelledby="resumen-title">
+        <h2 id="resumen-title">Resumen</h2>
+        <p>
+          <strong>La Liga Rural Pride</strong> es la web oficial de un grupo de música, reescrita por completo como una
+          <strong>Single Page Application</strong> en <strong>React</strong>. Presenta al grupo, anuncia sus actuaciones y
+          facilita el contacto con una experiencia fluida y rápida.
+        </p>
+        <p>
+          Empezó como una web estática en HTML y CSS y la migré a una arquitectura de componentes en React con
+          <strong>Tailwind CSS</strong> y componentes accesibles de <strong>Radix UI</strong>. Desde 2025 la sigo
+          actualizando poco a poco.
+        </p>
+      </section>
 
-        <!-- Columna izquierda -->
-        <div class="detail-section">
-          <h2>Descripción general</h2>
-          <p class="muted">
-            <strong>La Liga</strong> es la web oficial del grupo musical, reescrita completamente como una
-            <strong>Single Page Application (SPA)</strong> moderna. Diseñada para presentar su estilo,
-            anunciar actuaciones y facilitar el contacto con una experiencia de usuario fluida y rápida.
-          </p>
-
-          <h3>Resumen del proyecto</h3>
-          <p class="muted">
-            Desarrollada con <strong>React</strong> y estilizada mediante <strong>Tailwind CSS</strong>,
-            la aplicación utiliza componentes accesibles de <strong>Radix UI</strong> para ofrecer una
-            interfaz interactiva y robusta.
-          </p>
-
-          <h3>Diseño</h3>
-          <p class="muted">
-            Diseño completamente responsive y moderno, priorizando la claridad, el ritmo visual
-            y un enfoque mobile-first. Se incluyen animaciones fluidas y soporte para temas visuales.
-          </p>
-
-          <div class="tech-list mt-8">
-            <span class="tech-pill tech-react">React</span>
-            <span class="tech-pill tech-tailwind">Tailwind</span>
-            <span class="tech-pill tech-js">JavaScript</span>
-            <span class="tech-pill tech-responsive">Responsive</span>
-          </div>
-
-          <h3>Desarrollo</h3>
-          <p class="muted">
-            Arquitectura basada en componentes reutilizables, gestión de dependencias moderna y optimización
-            del rendimiento. Se ha puesto especial foco en la accesibilidad y en la creación de una
-            experiencia interactiva sin recargas de página.
-          </p>
-
-          <h3>Lecciones aprendidas</h3>
-          <ul class="muted">
-            <li>Integración de librerías de UI modernas como Radix y shadcn/ui.</li>
-            <li>Gestión del estado en aplicaciones React complejas.</li>
-            <li>Uso avanzado de utilidades de Tailwind para diseños responsive y animaciones.</li>
-          </ul>
-
-          <h3>Capturas / Galería</h3>
-          <div class="collapse-wrapper" id="wrapper-liga">
-            <div class="gallery">
-              <img src="../../assets/img/laliga/Inicio.webp" alt="Pantalla de Inicio" title="Pantalla de Inicio"
-                loading="lazy">
-              <img src="../../assets/img/laliga/Contacto.webp" alt="Sección Contacto" title="Sección Contacto"
-                loading="lazy">
-              <img src="../../assets/img/laliga/Discografia.webp" alt="Sección Discografía" title="Sección Discografía"
-                loading="lazy">
-              <img src="../../assets/img/laliga/Galeria.webp" alt="Galería de La Liga" title="Galería de La Liga"
-                loading="lazy">
-            </div>
-            <div class="collapse-overlay"></div>
-          </div>
-          <div class="btn-show-more-container">
-            <button class="btn-show-more" onclick="toggleGallery('wrapper-liga', this)">
-              <span>Ver todas las capturas</span>
-              <span class="icon">↓</span>
-            </button>
-          </div>
+      <section class="pd-section" id="funcionalidades" aria-labelledby="funcionalidades-title">
+        <h2 id="funcionalidades-title">Qué incluye</h2>
+        <div class="pd-features">
+          <article class="pd-feature">
+            <h3>Secciones del grupo</h3>
+            <p>Inicio, biografía, calendario de actuaciones, discografía, galería y contacto en una sola página.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Diseño responsive</h3>
+            <p>Enfoque mobile-first, priorizando la claridad y el ritmo visual, con animaciones fluidas y soporte de temas.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Componentes reutilizables</h3>
+            <p>Arquitectura por componentes con gestión de dependencias moderna y foco en el rendimiento.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Accesibilidad</h3>
+            <p>Componentes de Radix UI y navegación sin recargas de página.</p>
+          </article>
         </div>
+      </section>
 
-        <!-- Columna derecha -->
-        <aside class="panel card p-18">
-          <h3>Tecnologías y rol</h3>
-          <p class="muted">Rol: desarrollo frontend completo de la SPA, en solitario.</p>
+      <section class="pd-section" id="aprendizajes" aria-labelledby="aprendizajes-title">
+        <h2 id="aprendizajes-title">Aprendizajes clave</h2>
+        <ul class="pd-list">
+          <li>Integración de librerías de UI modernas como Radix y shadcn/ui.</li>
+          <li>Gestión del estado en una aplicación React.</li>
+          <li>Uso avanzado de Tailwind para diseños responsive y animaciones.</li>
+          <li>Migrar una web estática a componentes sin perder contenido ni estilo.</li>
+        </ul>
+      </section>
 
-          <div class="tech-list mt-8">
-            <span class="tech-pill tech-react">React</span>
-            <span class="tech-pill tech-tailwind">Tailwind</span>
-            <span class="tech-pill tech-js">JavaScript</span>
-          </div>
+      <section class="pd-section" id="galeria" aria-labelledby="galeria-title">
+        <h2 id="galeria-title">Galería</h2>
+        <p>Algunas secciones de la web. Pulsa una captura para ampliarla.</p>
+        <div class="gallery cols-2">
+          <figure>
+            <img src="../../assets/img/laliga/Inicio.webp" alt="La Liga — Inicio" loading="lazy" width="1600" height="1000">
+            <figcaption>Inicio</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/laliga/Discografia.webp" alt="La Liga — Discografía" loading="lazy" width="1600" height="1000">
+            <figcaption>Discografía</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/laliga/Galeria.webp" alt="La Liga — Galería" loading="lazy" width="1600" height="1000">
+            <figcaption>Galería</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/laliga/Contacto.webp" alt="La Liga — Contacto" loading="lazy" width="1600" height="1000">
+            <figcaption>Contacto</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
 
-          <h3 class="mt-14">Fecha</h3>
-          <p class="muted">2025 – Actualidad</p>
-          <h3 class="mt-12">Enlaces</h3>
-          <div class="flex-col gap-8 mt-6">
-            <a class="btn-repo" href="https://github.com/laliga-ruralpride/La-Liga-Rural-Pride" target="_blank"
-              rel="noopener noreferrer" aria-label="Repositorio La Liga">Repositorio</a>
-
-            <a class="btn-web" href="https://laliga-ruralpride.github.io/La-Liga-Rural-Pride/" target="_blank"
-              rel="noopener noreferrer" aria-label="Sitio web La Liga">Sitio web</a>
-          </div>
-
-          <h3 class="mt-18">Notas técnicas</h3>
-          <p class="muted">Proyecto migrado desde una versión inicial estática en HTML/CSS a una arquitectura moderna
-            basada en componentes React.</p>
-        </aside>
-
+    <!-- CIERRE -->
+    <section class="pd-next" aria-label="Siguientes pasos">
+      <div>
+        <h2>¿Hablamos?</h2>
+        <p>Puedo enseñarte el proyecto en detalle o contarte cómo lo construí.</p>
+      </div>
+      <div class="pd-actions">
+        <a class="btn-outline" href="../../index.html#contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg> Contactar</a>
+        <a class="btn-primary" href="../laboral/laboral.html">Siguiente: Laboral <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </section>
 
@@ -233,17 +212,17 @@
   </main>
 
   <!-- LIGHTBOX / CAROUSEL -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de capturas" aria-hidden="true">
     <button class="lightbox-close" aria-label="Cerrar">✕</button>
     <button class="lightbox-prev" aria-label="Anterior">‹</button>
     <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
     <button class="lightbox-next" aria-label="Siguiente">›</button>
   </div>
 
-  <script src="../../assets/js/lightbox.js"></script>
+  <script src="../../assets/js/lightbox.js?v=2"></script>
   <script src="../../assets/js/mobile-menu.js"></script>
   <script src="../../assets/js/scroll-reveal.js"></script>
-  <script src="../../assets/js/gallery-toggle.js"></script>
 </body>
 
 </html>

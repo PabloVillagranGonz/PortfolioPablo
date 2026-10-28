@@ -889,11 +889,6 @@ html[data-theme="dark"] .tags-inline .tech-jwt::before { background: #e5e7eb; }
 }
 .btn-private svg { width: 16px; height: 16px; }
 
-/* gallery */
-.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 12px; }
-.gallery img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; display: block; transition: transform .25s ease; }
-.gallery img:hover { transform: scale(1.03); }
-
 /* ========= TECH PILL COLORS =========
    Color de texto elegido para un contraste mínimo de 4.5:1 sobre el color de cada tecnología */
 /* Web */
@@ -1111,7 +1106,6 @@ html[data-theme="dark"] #cf-status.is-success { color: #4ade80; }
 html[data-theme="dark"] .btn-repo { background: #0f1724; border-color: rgba(255,255,255,0.06); color: #e6eef8; box-shadow: 0 6px 20px rgba(0,0,0,0.6); }
 html[data-theme="dark"] .btn-web { background: #059669; color: #fff; box-shadow: 0 6px 18px rgba(5,150,105,0.12); }
 html[data-theme="dark"] .btn-primary { box-shadow: 0 8px 26px rgba(99,102,241,0.12); }
-html[data-theme="dark"] .gallery img:hover { transform: scale(1.03); box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
 
 /* ========= FONDO ========= */
 body {
@@ -1150,88 +1144,4 @@ html[data-theme="dark"] body {
       rgba(16, 185, 129, 0.1),
       transparent 45%
     );
-}
-
-/* ============================
-   COLLAPSIBLE SECTIONS (Galleries & Lists)
-============================ */
-
-.collapse-wrapper {
-  position: relative;
-  max-height: 520px;
-  overflow: hidden;
-  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 20px;
-  padding: 0 10px; /* Evita que sombras o bordes se corten en los laterales */
-}
-
-.collapse-wrapper.expanded {
-  max-height: 5000px !important;
-}
-
-.collapse-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background: linear-gradient(transparent, var(--bg)); /* Usamos bg por defecto */
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 10px;
-  transition: opacity 0.4s ease;
-  z-index: 10;
-}
-
-/* En las páginas de proyecto, las tarjetas usan --card */
-.project-detail-page .collapse-overlay {
-  background: linear-gradient(transparent, var(--card));
-}
-
-.collapse-wrapper.expanded .collapse-overlay {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.btn-show-more {
-  background: var(--bg-2);
-  color: var(--accent);
-  border: 1px solid var(--border);
-  padding: 8px 20px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: var(--shadow-1);
-}
-
-.btn-show-more:hover {
-  background: var(--accent);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-.btn-show-more .icon {
-  transition: transform 0.3s ease;
-}
-
-.collapse-wrapper.expanded + .btn-show-more-container .icon {
-  transform: rotate(180deg);
-}
-
-.btn-show-more-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 600px) {
-  .collapse-wrapper {
-    max-height: 400px;
-  }
 }

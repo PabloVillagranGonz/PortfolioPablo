@@ -54,7 +54,7 @@ Portfolio/
 ├── styles.css              # Estilos globales
 ├── assets/
 │   ├── img/                # Imágenes y capturas
-│   ├── js/                 # Scripts (lightbox, menú, tema)
+│   ├── js/                 # Scripts (lightbox, pestañas, menú, tema)
 │   ├── emailJS/            # Integración EmailJS
 │   └── archivos/           # CV descargable
 ├── sitemap.xml             # Mapa del sitio para buscadores
@@ -82,6 +82,7 @@ Portfolio/
 - Mismo header y menú en todas las páginas; contexto (fecha y autoría) en cada proyecto.
 - Rendimiento: foto del hero en WebP (de 4,3 MB a 31 KB) y tema aplicado antes de pintar.
 - SEO y accesibilidad: `sitemap.xml`, imágenes JPG para compartir en redes, contraste mínimo 4.5:1 en etiquetas y limpieza de CSS.
+- Páginas de proyecto rediseñadas: hero con contexto y acciones, ficha rápida, funcionalidades en tarjetas, galería con pie de foto (pestañas por rol en PentaNet) y cierre con "Siguiente proyecto".
 
 ## 📄 Licencia
 

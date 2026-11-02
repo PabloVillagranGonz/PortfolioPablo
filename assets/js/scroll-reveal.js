@@ -40,7 +40,7 @@
     }
 
     // 2. Animación de elementos (Scroll Reveal)
-    const nodes = document.querySelectorAll('section, .project-card, .experience-item, .card, .project-media, .tech-list');
+    const nodes = document.querySelectorAll('section, .pj, .card, .tech-list');
     nodes.forEach(n => {
       n.classList.add('reveal');
       observer.observe(n);

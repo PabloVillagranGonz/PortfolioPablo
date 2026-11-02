@@ -1,6 +1,5 @@
 // back-to-top.js
 // Botón flotante con flecha que aparece al bajar y lleva al principio de la página.
-// También gestiona los enlaces "Volver arriba" del footer.
 (function () {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -22,7 +21,6 @@
     btn.addEventListener('click', toTop);
     document.body.appendChild(btn);
 
-    document.querySelectorAll('.footer-top').forEach(a => a.addEventListener('click', toTop));
 
     let ticking = false;
     function update() {

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no" />
+  <title>Mi Día — Detalle del proyecto — Pablo Villagrán</title>
+
+  <meta name="description"
+    content="Mi Día — App de rutina diaria con planificación dominical. PWA instalable con Expo, React Native, TypeScript y Supabase: avisos Web Push, Google Calendar y modo sin conexión.">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../../styles.css?v=12">
+
+  <!-- Estilos específicos de páginas de proyecto -->
+  <link rel="stylesheet" href="../project-detail.css?v=9">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mi Día — Tu día, bloque a bloque">
+  <meta property="og:description" content="App de rutina diaria con planificación dominical: Expo, React Native, TypeScript y Supabase.">
+  <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/projects/midia/midia.html">
+  <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/midia/og-midia.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Pablo Villagrán Portfolio">
+  <link rel="canonical" href="https://pablovillagrangonz.github.io/PortfolioPablo/projects/midia/midia.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mi Día — Tu día, bloque a bloque">
+  <meta name="twitter:description" content="App de rutina diaria con planificación dominical: Expo, React Native, TypeScript y Supabase.">
+  <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/midia/og-midia.jpg">
+
+  <script src="../../assets/js/theme-toggle.js?v=2"></script>
+
+</head>
+
+<body class="project-detail-page">
+  <div class="progress-bar"></div>
+  <!-- NAV -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../../index.html#inicio">Pablo Villagrán González</a>
+      <a class="nav-status" href="../../index.html#contacto"><span class="availability-dot" aria-hidden="true"></span>Disponible para trabajar</a>
+
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="../../index.html#inicio">Inicio</a>
+        <a href="../../index.html#sobre-mi">Sobre mí</a>
+        <a href="../../index.html#proyectos">Proyectos</a>
+        <a href="../../index.html#experiencia">Trayectoria</a>
+        <a href="../../index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta"><a href="../../index.html#contacto" class="btn">Contactar</a></div>
+
+      <!-- Toggle tema -->
+      <button id="theme-toggle" class="btn-ghost" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+
+      <!-- Hamburger Menu Toggle (móvil) -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay para cerrar menú al clickear -->
+  <div class="overlay"></div>
+
+  <!-- Side Menu (móvil) -->
+  <nav class="side-menu" aria-label="Menú lateral">
+    <button class="close-menu" aria-label="Cerrar menú">✕</button>
+    <a href="../../index.html#inicio">Inicio</a>
+    <a href="../../index.html#sobre-mi">Sobre mí</a>
+    <a href="../../index.html#proyectos">Proyectos</a>
+    <a href="../../index.html#experiencia">Trayectoria</a>
+    <a href="../../index.html#contacto">Contacto</a>
+    <a href="../../assets/archivos/PabloVillagran_CV.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+  </nav>
+
+  <main class="wrap" role="main">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb mb-12">
+      <a href="../../index.html#proyectos" class="muted no-decoration">Proyectos</a>
+      <span aria-hidden="true" class="mx-8">›</span>
+      <span aria-current="page">Mi Día</span>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pd-hero" aria-labelledby="midia-title">
+      <div class="pd-hero-text">
+        <p class="pd-eyebrow">Nov 2026 · En solitario · En uso diario</p>
+        <h1 id="midia-title">Mi Día</h1>
+        <p class="pd-tagline">App de rutina diaria con planificación dominical: en cada momento, qué toca ahora y qué viene después.</p>
+        <ul class="skill-chips" aria-label="Tecnologías">
+          <li class="chip tech-typescript">TypeScript</li>
+          <li class="chip tech-react">React Native</li>
+          <li class="chip tech-expo">Expo</li>
+          <li class="chip tech-supabase">Supabase</li>
+          <li class="chip tech-postgres">PostgreSQL</li>
+          <li class="chip tech-pwa">PWA</li>
+          <li class="chip tech-jest">Jest</li>
+        </ul>
+        <div class="pd-actions">
+          <a class="btn-web" href="https://mi-dia-app-seven.vercel.app" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Probar la demo</a>
+          <a class="btn-repo" href="https://github.com/PabloVillagranGonz/mi-dia-app" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio</a>
+        </div>
+        <p class="pd-demo-note">Cuenta de demostración: <code>demo@example.com</code> · <code>midia-demo-2026</code>. También con el botón «Probar la demo» del inicio de sesión; los datos vuelven a los de ejemplo cada noche.</p>
+      </div>
+      <div class="pd-hero-media">
+        <img src="../../assets/img/midia/portada.webp" alt="Mi Día — Vistas Semana, Hoy y Rutina base en tres móviles" fetchpriority="high" width="2400" height="1200">
+      </div>
+    </section>
+
+    <!-- FICHA RÁPIDA -->
+    <dl class="pd-facts">
+      <div><dt>Rol</dt><dd>Full-stack, en solitario</dd></div>
+      <div><dt>Periodo</dt><dd>Nov 2026</dd></div>
+      <div><dt>Tipo</dt><dd>PWA instalable · iOS y Android</dd></div>
+      <div><dt>Código</dt><dd>Público en GitHub</dd></div>
+    </dl>
+
+    <div class="pd-body">
+      <section class="pd-section" id="resumen" aria-labelledby="resumen-title">
+        <h2 id="resumen-title">Resumen</h2>
+        <p>
+          <strong>Mi Día</strong> organiza el día en bloques a partir de una <strong>rutina base</strong> por día de la
+          semana. Cada domingo se planifica la semana siguiente y, durante el día, la vista <strong>Hoy</strong> muestra la
+          actividad en curso con su cuenta atrás, la siguiente y el progreso de las tareas.
+        </p>
+        <p>
+          Está escrita en <strong>TypeScript</strong> con <strong>Expo y React Native</strong>, así que el mismo código compila
+          para iOS, Android y web. La uso a diario como <strong>app web instalable (PWA)</strong> en el iPhone, desplegada en
+          Vercel, con <strong>Supabase</strong> (Postgres, Auth, Realtime y Edge Functions) como backend.
+        </p>
+      </section>
+
+      <section class="pd-section" id="funcionalidades" aria-labelledby="funcionalidades-title">
+        <h2 id="funcionalidades-title">Qué incluye</h2>
+        <div class="pd-features">
+          <article class="pd-feature">
+            <h3>Ahora y después</h3>
+            <p>Actividad en curso con cuenta atrás, la siguiente y el progreso del día. Los huecos aparecen solos como «Tiempo libre».</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Rutina y planificación dominical</h3>
+            <p>Una plantilla por día de la semana. Cada domingo un asistente genera la semana siguiente desde la rutina o copiando la anterior.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Eventos puntuales</h3>
+            <p>Un ensayo o una cita recorta, parte o sustituye lo que pise de la rutina, y se puede restaurar el día con un toque.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Google Calendar</h3>
+            <p>Sincronización casi en tiempo real (OAuth + webhooks de Google) de los calendarios elegidos, en solo lectura.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Avisos Web Push</h3>
+            <p>Notificación al empezar cada actividad, enviada desde el servidor por un cron, también con la app cerrada en el iPhone.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Sin conexión y administración</h3>
+            <p>Service worker y caché de la última lectura para abrirla sin red, y una consola de administración con usuarios y estadísticas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pd-section" id="arquitectura" aria-labelledby="arquitectura-title">
+        <h2 id="arquitectura-title">Cómo está hecha</h2>
+        <ul class="pd-list">
+          <li><strong>Capas claras:</strong> pantallas con Expo Router, una única capa de datos (mock o Supabase) y un dominio de funciones puras.</li>
+          <li><strong>Lógica de negocio testeada:</strong> solapes, actividades que cruzan medianoche, recorte por eventos, huecos, progreso y semanas, con más de 120 tests de Jest.</li>
+          <li><strong>Base de datos segura:</strong> PostgreSQL con Row Level Security en todas las tablas, migraciones versionadas y tests SQL ejecutados sobre PGlite.</li>
+          <li><strong>Servidor sin servidor:</strong> Edge Functions para Web Push, Google Calendar y administración, orquestadas con <code>pg_cron</code>.</li>
+          <li><strong>Hora local siempre:</strong> horas como <code>time</code> + <code>date</code> en Europe/Madrid, formato 24 h y semanas de lunes a domingo.</li>
+        </ul>
+      </section>
+
+      <section class="pd-section" id="aprendizajes" aria-labelledby="aprendizajes-title">
+        <h2 id="aprendizajes-title">Aprendizajes clave</h2>
+        <ul class="pd-list">
+          <li>Llevar una app de React Native a la web como PWA, con variantes <code>.web.tsx</code> donde la plataforma lo exige.</li>
+          <li>Web Push en iOS: service worker, claves VAPID y envío programado desde el servidor.</li>
+          <li>Integrar una API externa (Google Calendar) con OAuth, webhooks y sincronización incremental.</li>
+          <li>Separar la lógica de negocio de la interfaz para poder probarla a fondo.</li>
+        </ul>
+      </section>
+
+      <section class="pd-section pd-section--wide" id="galeria" aria-labelledby="galeria-title">
+        <h2 id="galeria-title">Galería</h2>
+        <p>Capturas de la app en producción con la cuenta de demostración. Pulsa una para ampliarla.</p>
+        <div class="gallery gallery--phone">
+          <figure>
+            <img src="../../assets/img/midia/hoy.webp" alt="Hoy — Actividad en curso, siguiente y progreso del día" loading="lazy" width="780" height="1688">
+            <figcaption>Hoy</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/hoy-linea.webp" alt="Hoy — Línea de tiempo con tareas hechas y tiempo libre" loading="lazy" width="780" height="1688">
+            <figcaption>Línea del día</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/editar-actividad.webp" alt="Editar actividad — Horario, categoría, tipo, aviso y nota" loading="lazy" width="780" height="1688">
+            <figcaption>Editar actividad</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/semana.webp" alt="Semana — Progreso semanal y franja de cada día por categorías" loading="lazy" width="780" height="1688">
+            <figcaption>Semana</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/planificar.webp" alt="Planificar — Asistente dominical para generar la semana siguiente" loading="lazy" width="780" height="1688">
+            <figcaption>Planificación dominical</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/dia.webp" alt="Día concreto — Ajustar horarios y añadir eventos" loading="lazy" width="780" height="1688">
+            <figcaption>Día concreto</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/rutina.webp" alt="Rutina base — Plantilla de cada día de la semana" loading="lazy" width="780" height="1688">
+            <figcaption>Rutina base</figcaption>
+          </figure>
+          <figure>
+            <img src="../../assets/img/midia/ajustes.webp" alt="Ajustes — Notificaciones, recordatorio de planificación y categorías" loading="lazy" width="780" height="1688">
+            <figcaption>Ajustes</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <!-- CIERRE -->
+    <section class="pd-next" aria-label="Siguientes pasos">
+      <a class="pd-next-project" href="../pentaNet/pentaNet.html">
+        <span class="pd-next-label">Siguiente proyecto</span>
+        <span class="pd-next-title">PentaNet <svg class="arrow-ne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6"/><path d="M8.5 6H18v9.5"/></svg></span>
+      </a>
+      <div class="pd-next-contact">
+        <div>
+          <h2>¿Hablamos?</h2>
+          <p>Puedo enseñarte el proyecto en detalle o contarte cómo lo construí.</p>
+        </div>
+        <a class="btn-outline" href="../../index.html#contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg> Contactar</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:pablovillagrangonz@gmail.com">pablovillagrangonz@gmail.com</a>
+      <span>© 2026 Pablo Villagrán González · <a href="../../privacidad.html">Privacidad</a></span>
+    </footer>
+  </main>
+
+  <!-- LIGHTBOX / CAROUSEL -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de capturas" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" aria-label="Anterior">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+    <button class="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="../../assets/js/lightbox.js?v=2"></script>
+  <script src="../../assets/js/mobile-menu.js"></script>
+  <script src="../../assets/js/scroll-reveal.js"></script>
+  <script src="../../assets/js/back-to-top.js"></script>
+</body>
+
+</html>

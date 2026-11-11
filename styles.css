@@ -1063,6 +1063,11 @@ html[data-theme="dark"] .tags-inline .tech-jwt::before { background: #e5e7eb; }
 .tech-react   { --tech: #61dafb; background: #61dafb; color: #111; border-color: rgba(97,218,251,0.18); }
 .tech-tailwind{ --tech: #38bdf8; background: #38bdf8; color: #111; border-color: rgba(56,189,248,0.18); }
 .tech-mongodb { --tech: #47a248; background: #47a248; color: #111; border-color: rgba(71,162,72,0.18); }
+.tech-expo     { --tech: #4630eb; background: #4630eb; color: #fff; border-color: rgba(70,48,235,0.18); }
+.tech-supabase { --tech: #3ecf8e; background: #3ecf8e; color: #111; border-color: rgba(62,207,142,0.18); }
+.tech-postgres { --tech: #336791; background: #336791; color: #fff; border-color: rgba(51,103,145,0.18); }
+.tech-pwa      { --tech: #5a0fc8; background: #5a0fc8; color: #fff; border-color: rgba(90,15,200,0.18); }
+.tech-jest     { --tech: #c21325; background: #c21325; color: #fff; border-color: rgba(194,19,37,0.18); }
 
 /* ========= CONTACTO: cierre grande ========= */
 .eyebrow {

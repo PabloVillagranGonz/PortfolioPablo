@@ -26,8 +26,8 @@ Desarrollador full-stack con base en **Java y Spring Boot** y experiencia profes
 |-----------|-------------|
 | **Backend** | Java · Spring Boot · Hibernate / JPA · APIs REST · JWT · WebSocket · Swagger |
 | **Frontend** | Angular · TypeScript · React · Tailwind · HTML · CSS · JavaScript |
-| **Móvil** | Flutter · Dart |
-| **Bases de datos** | MySQL · MongoDB |
+| **Móvil** | Flutter · Dart · React Native · Expo |
+| **Bases de datos** | MySQL · PostgreSQL · MongoDB · Supabase |
 | **Herramientas** | Git · GitHub |
 
 ## 🚀 Proyectos destacados
@@ -36,6 +36,11 @@ Desarrollador full-stack con base en **Java y Spring Boot** y experiencia profes
 Sistema **full-stack** de gestión de pedidos para laboratorio dental (en producción).
 Pizarra digital en tiempo real (tabla, Kanban, calendario, por técnico), notificaciones automáticas vía WebSocket y control de acceso por roles.
 > Angular · Spring Boot · MySQL · JWT · WebSocket
+
+### 📅 [Mi Día](projects/midia/midia.html)
+App de **rutina diaria** con planificación dominical, en uso diario como PWA instalable ([demo](https://mi-dia-app-seven.vercel.app)).
+Vista «ahora y después», rutina base por día, eventos que recortan la rutina, avisos Web Push, sincronización con Google Calendar y modo sin conexión.
+> TypeScript · React Native (Expo) · Supabase · PostgreSQL · Jest
 
 ### 🎓 [PentaNet](projects/pentaNet/pentaNet.html)
 Plataforma **full-stack** de gestión académica integral.
@@ -60,6 +65,7 @@ Portfolio/
 ├── sitemap.xml             # Mapa del sitio para buscadores
 └── projects/
     ├── laboral/            # Detalle Laboral
+    ├── midia/              # Detalle Mi Día
     ├── pentaNet/           # Detalle PentaNet (Inc. Gestión de Aulas)
     ├── laliga/             # Detalle La Liga
     └── project-detail.css  # Estilos compartidos
@@ -83,6 +89,8 @@ Portfolio/
 - Rendimiento: foto del hero en WebP (de 4,3 MB a 31 KB) y tema aplicado antes de pintar.
 - SEO y accesibilidad: `sitemap.xml`, imágenes JPG para compartir en redes, contraste mínimo 4.5:1 en etiquetas y limpieza de CSS.
 - Páginas de proyecto rediseñadas: hero con contexto y acciones, ficha rápida, funcionalidades en tarjetas, galería con pie de foto (pestañas por rol en PentaNet) y cierre con "Siguiente proyecto".
+
+**Noviembre 2026** — Nuevo proyecto **Mi Día**: tarjeta en la portada, página de detalle con galería de capturas de móvil y enlace a la demo; tecnologías ampliadas con React Native, Expo, PostgreSQL y Supabase.
 
 ## 📄 Licencia
 

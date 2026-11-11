@@ -179,6 +179,14 @@ main.wrap {
   line-height: 1.4;
 }
 
+/* Galería de capturas de móvil (Mi Día) */
+.project-detail-page .gallery.gallery--phone { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 18px; }
+.project-detail-page .gallery.gallery--phone img { aspect-ratio: 390 / 844; border-radius: 18px; }
+
+/* Nota con la cuenta de demostración */
+.pd-demo-note { grid-column: 2; margin: 14px 0 0; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.pd-demo-note code { white-space: nowrap; font-family: var(--font-mono); font-size: 12px; padding: 2px 6px; border-radius: 6px; background: var(--bg-2); color: var(--text); }
+
 /* Pestañas (galerías por rol) */
 .pd-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .pd-tab {
@@ -268,6 +276,8 @@ main.wrap {
   .pd-section > *, .pd-section > h2 { grid-column: 1; grid-row: auto; position: static; }
   .pd-section > h2 { margin-bottom: 12px; }
   .project-detail-page .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-detail-page .gallery.gallery--phone { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pd-demo-note { grid-column: 1; }
 }
 
 @media (max-width: 600px) {
@@ -277,6 +287,7 @@ main.wrap {
   .pd-actions { display: grid; grid-template-columns: 1fr; }
   .pd-features { grid-template-columns: 1fr; }
   .project-detail-page .gallery, .project-detail-page .gallery.cols-2 { grid-template-columns: 1fr; }
+  .project-detail-page .gallery.gallery--phone { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
   .pd-next-contact { flex-direction: column; align-items: stretch; }
   .pd-next-contact .btn-outline { justify-content: center; }
 }

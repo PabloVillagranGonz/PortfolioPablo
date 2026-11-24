@@ -43,9 +43,9 @@ Vista «ahora y después», rutina base por día, eventos que recortan la rutina
 > TypeScript · React Native (Expo) · Supabase · PostgreSQL · Jest
 
 ### 🎓 [PentaNet](projects/pentaNet/pentaNet.html)
-Plataforma **full-stack** de gestión académica integral.
-Incluye control de roles (admin, secretaría, profesor, alumno), sistema de reserva de aulas en tiempo real, mensajería interna y expedientes académicos.
-> Flutter · Dart · Spring Boot · MySQL · JWT · APIs REST
+Aplicación **full-stack** para gestionar conservatorios y escuelas de música ([demo](https://pentanet-demo.vercel.app)).
+Cuatro roles (dirección, conserjería, profesorado y alumnado), notas y faltas en hoja tipo Excel, cabinas de estudio, mensajería interna con adjuntos y modo claro/oscuro.
+> Flutter · Spring Boot 3 · Java 17 · MySQL · Flyway · JWT · Docker
 
 ### 🎵 [La Liga](projects/laliga/ligaweb.html)
 SPA para grupo musical con secciones de inicio, biografía, calendario, galería y contacto; diseño responsive y componentes reutilizables.

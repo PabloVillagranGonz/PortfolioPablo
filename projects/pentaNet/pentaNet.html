@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="format-detection" content="telephone=no, date=no, address=no" />
 
-  <title>PentaNet — Gestión académica full-stack | Pablo Villagrán</title>
+  <title>PentaNet — Gestión de conservatorios full-stack | Pablo Villagrán</title>
 
   <meta name="description"
-    content="PentaNet — Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
+    content="PentaNet — Aplicación full-stack para conservatorios y escuelas de música, con Flutter y Spring Boot. Demo en vivo con cuentas de prueba por rol.">
 
   <!-- Estilos globales -->
-  <link rel="stylesheet" href="../../styles.css?v=12">
+  <link rel="stylesheet" href="../../styles.css?v=13">
   <!-- Estilos específicos del proyecto -->
-  <link rel="stylesheet" href="../project-detail.css?v=9">
+  <link rel="stylesheet" href="../project-detail.css?v=10">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
@@ -22,9 +22,9 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="PentaNet — Gestión académica full-stack">
+  <meta property="og:title" content="PentaNet — Gestión de conservatorios full-stack">
   <meta property="og:description"
-    content="Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
+    content="Aplicación full-stack para conservatorios y escuelas de música, con Flutter y Spring Boot. Demo en vivo con cuentas de prueba por rol.">
   <meta property="og:url" content="https://pablovillagrangonz.github.io/PortfolioPablo/projects/pentaNet/pentaNet.html">
   <meta property="og:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/og-pentanet.jpg">
   <meta property="og:image:width" content="1200">
@@ -34,9 +34,9 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PentaNet — Gestión académica full-stack">
+  <meta name="twitter:title" content="PentaNet — Gestión de conservatorios full-stack">
   <meta name="twitter:description"
-    content="Aplicación full-stack de gestión académica con Flutter y Spring Boot. Autenticación JWT, control de roles y API REST segura.">
+    content="Aplicación full-stack para conservatorios y escuelas de música, con Flutter y Spring Boot. Demo en vivo con cuentas de prueba por rol.">
   <meta name="twitter:image" content="https://pablovillagrangonz.github.io/PortfolioPablo/assets/img/pentanet/og-pentanet.jpg">
 
   <script src="../../assets/js/theme-toggle.js?v=2"></script>
@@ -101,23 +101,26 @@
       <div class="pd-hero-text">
         <p class="pd-eyebrow">2024 – 2026 · Proyecto final del DAM · En solitario</p>
         <h1 id="pentanet-title">PentaNet</h1>
-        <p class="pd-tagline">Plataforma de gestión académica para centros formativos, con cuatro roles y reserva de aulas en tiempo real.</p>
+        <p class="pd-tagline">Aplicación para el día a día de un conservatorio o escuela de música: cuatro roles, cabinas de estudio y mensajería interna, en web y móvil.</p>
         <ul class="skill-chips" aria-label="Tecnologías">
           <li class="chip tech-flutter">Flutter</li>
           <li class="chip tech-dart">Dart</li>
           <li class="chip tech-java">Java</li>
           <li class="chip tech-spring">Spring Boot</li>
           <li class="chip tech-mysql">MySQL</li>
+          <li class="chip tech-flyway">Flyway</li>
           <li class="chip tech-jwt">JWT</li>
+          <li class="chip tech-docker">Docker</li>
           <li class="chip tech-rest">APIs REST</li>
         </ul>
         <div class="pd-actions">
-          <a class="btn-primary" href="#galeria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> Ver capturas</a>
-          <a class="btn-repo" href="https://github.com/PabloVillagranGonz/PentaNetApi" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio</a>
+          <a class="btn-web" href="https://pentanet-demo.vercel.app" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Probar la demo</a>
+          <span class="btn-private" title="El código de este proyecto no es público"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Código privado</span>
         </div>
+        <p class="pd-demo-note">Cuatro cuentas de prueba, una por rol, con la contraseña <code>123456</code>: las tienes en <a href="#demo">Probar la demo</a>.</p>
       </div>
       <div class="pd-hero-media">
-        <img src="../../assets/img/pentanet/og-pentanet.jpg" alt="PentaNet — Logotipo de la plataforma de gestión académica" fetchpriority="high">
+        <img src="../../assets/img/pentanet/og-pentanet.jpg" alt="PentaNet — Logotipo de la plataforma de gestión de conservatorios" fetchpriority="high">
       </div>
     </section>
 
@@ -125,23 +128,47 @@
     <dl class="pd-facts">
       <div><dt>Rol</dt><dd>Full-stack, en solitario</dd></div>
       <div><dt>Periodo</dt><dd>2024 – 2026</dd></div>
-      <div><dt>Contexto</dt><dd>Proyecto final del DAM</dd></div>
-      <div><dt>Código</dt><dd>Público en GitHub</dd></div>
+      <div><dt>Plataformas</dt><dd>Web, móvil y tablet</dd></div>
+      <div><dt>Demo</dt><dd>En vivo · código privado</dd></div>
     </dl>
 
     <div class="pd-body">
       <section class="pd-section" id="resumen" aria-labelledby="resumen-title">
         <h2 id="resumen-title">Resumen</h2>
         <p>
-          <strong>PentaNet</strong> es una aplicación <strong>full-stack de gestión académica</strong> orientada a
-          conservatorios, escuelas de música y centros formativos. La desarrollé como <strong>proyecto final del DAM</strong>,
-          con <strong>frontend en Flutter</strong> y <strong>backend en Spring Boot</strong>, autenticación segura, control
-          de roles y comunicación mediante APIs REST.
+          <strong>PentaNet</strong> es una aplicación <strong>full-stack</strong> para el día a día de un
+          <strong>conservatorio o escuela de música</strong>. La desarrollé en solitario como <strong>proyecto final del DAM</strong>,
+          con <strong>frontend en Flutter</strong> (web y móvil) y <strong>backend en Spring Boot 3</strong> sobre Java 17 y MySQL.
         </p>
         <p>
-          El objetivo era una infraestructura capaz de gestionar la complejidad de un centro educativo: administradores,
-          profesores, alumnos y secretaría conviven en la misma plataforma, cada uno con sus flujos de trabajo y
-          permisos, garantizando la integridad de los datos.
+          El profesorado pasa lista y pone notas en una <strong>hoja tipo Excel</strong>, el alumnado consulta su horario,
+          notas y faltas, la conserjería gestiona las <strong>cabinas de estudio</strong> y la dirección administra usuarios,
+          aulas y cursos. Todo con mensajería interna con adjuntos y una interfaz adaptada a móvil, tablet y ordenador,
+          con modo claro y oscuro.
+        </p>
+      </section>
+
+      <section class="pd-section" id="demo" aria-labelledby="demo-title">
+        <h2 id="demo-title">Probar la demo</h2>
+        <p>
+          La demo está en <a href="https://pentanet-demo.vercel.app" target="_blank" rel="noopener noreferrer">pentanet-demo.vercel.app</a>.
+          Entra con la cuenta del rol que quieras ver; todas pertenecen al centro <strong>Conservatorio de Valladolid</strong>
+          y usan la contraseña <code>123456</code>.
+        </p>
+        <table class="pd-accounts">
+          <thead>
+            <tr><th scope="col">Rol</th><th scope="col">Correo</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Profesora</th><td><code>lauragarrido@pentanet.es</code></td></tr>
+            <tr><th scope="row">Alumno</th><td><code>pablo@pentanet.es</code></td></tr>
+            <tr><th scope="row">Conserjería</th><td><code>secretario1@pentanet.es</code></td></tr>
+            <tr><th scope="row">Dirección</th><td><code>admin1@pentanet.es</code></td></tr>
+          </tbody>
+        </table>
+        <p class="pd-accounts-note">
+          La demo se reinicia periódicamente con datos de ejemplo. Si lleva un rato sin visitas, la primera carga puede
+          tardar alrededor de un minuto.
         </p>
       </section>
 
@@ -149,20 +176,20 @@
         <h2 id="roles-title">Roles de usuario</h2>
         <div class="pd-features">
           <article class="pd-feature">
-            <h3>Administrador</h3>
-            <p>Control total sobre centros, cursos, asignaturas, horarios, aulas y usuarios.</p>
+            <h3>Dirección</h3>
+            <p>Administra el centro: usuarios, aulas, cursos, asignaturas y horarios.</p>
           </article>
           <article class="pd-feature">
-            <h3>Secretaría</h3>
-            <p>Gestión de la ocupación de espacios y reservas de aulas en tiempo real.</p>
+            <h3>Conserjería</h3>
+            <p>Gestiona las cabinas de estudio: ocupación al momento, nuevas reservas, reservas activas e historial.</p>
           </article>
           <article class="pd-feature">
-            <h3>Profesor</h3>
-            <p>Seguimiento académico: calificaciones, faltas y comunicación con los alumnos.</p>
+            <h3>Profesorado</h3>
+            <p>Pasa lista y pone notas en una hoja tipo Excel, y se comunica con su alumnado.</p>
           </article>
           <article class="pd-feature">
-            <h3>Alumno</h3>
-            <p>Consulta de horarios, expediente y notas, y reserva de espacios de estudio.</p>
+            <h3>Alumnado</h3>
+            <p>Consulta su horario, notas, faltas y expediente, y reserva cabinas de estudio.</p>
           </article>
         </div>
         <p>La asignación es automática: un alumno que pertenece a un curso hereda sus asignaturas, horarios y profesores sin configuración manual.</p>
@@ -172,20 +199,28 @@
         <h2 id="funcionalidades-title">Funcionalidades</h2>
         <div class="pd-features">
           <article class="pd-feature">
-            <h3>Reserva de aulas en tiempo real</h3>
-            <p>Estado de las cabinas al momento, nuevas reservas, reservas activas e historial de uso.</p>
+            <h3>Notas y faltas en hoja tipo Excel</h3>
+            <p>El profesorado pasa lista y califica a toda la clase desde una misma tabla editable.</p>
           </article>
           <article class="pd-feature">
             <h3>Mensajería interna</h3>
-            <p>Bandeja de entrada y enviados, leídos y no leídos, borrado y contador, todo gestionado en el backend.</p>
+            <p>Bandeja de entrada y enviados, archivos adjuntos, leídos y no leídos, y contador, todo gestionado en el backend.</p>
           </article>
           <article class="pd-feature">
             <h3>Expediente académico</h3>
             <p>Notas por asignatura, faltas y expediente completo del alumno.</p>
           </article>
           <article class="pd-feature">
+            <h3>Cabinas de estudio</h3>
+            <p>Estado de las cabinas al momento, nuevas reservas, reservas activas e historial de uso.</p>
+          </article>
+          <article class="pd-feature">
             <h3>Horarios y asignaturas</h3>
             <p>Horarios por curso y profesor, y relaciones entre asignaturas, cursos, alumnos y profesores.</p>
+          </article>
+          <article class="pd-feature">
+            <h3>Interfaz adaptable</h3>
+            <p>Diseño para móvil, tablet y ordenador, con modo claro y oscuro.</p>
           </article>
         </div>
       </section>
@@ -202,9 +237,11 @@
       <section class="pd-section" id="arquitectura" aria-labelledby="arquitectura-title">
         <h2 id="arquitectura-title">Arquitectura</h2>
         <ul class="pd-list">
-          <li><strong>Backend:</strong> controladores → servicios → repositorios (Spring Boot).</li>
+          <li><strong>Backend:</strong> controladores → servicios → repositorios (Spring Boot 3, Java 17).</li>
+          <li><strong>Base de datos:</strong> MySQL con migraciones versionadas en <strong>Flyway</strong>.</li>
           <li><strong>Frontend:</strong> controllers, services y providers (Flutter).</li>
           <li>Separación estricta entre lógica de negocio, interfaz y acceso a datos.</li>
+          <li>Backend empaquetado con <strong>Docker</strong>.</li>
         </ul>
       </section>
 
@@ -225,8 +262,8 @@
         <div class="pd-tabs" role="tablist" aria-label="Capturas por rol">
           <button class="pd-tab" role="tab" id="tab-alumno" aria-controls="panel-alumno" aria-selected="true">Alumno</button>
           <button class="pd-tab" role="tab" id="tab-profesor" aria-controls="panel-profesor" aria-selected="false" tabindex="-1">Profesor</button>
-          <button class="pd-tab" role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" tabindex="-1">Administrador</button>
-          <button class="pd-tab" role="tab" id="tab-secretaria" aria-controls="panel-secretaria" aria-selected="false" tabindex="-1">Secretaría</button>
+          <button class="pd-tab" role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" tabindex="-1">Dirección</button>
+          <button class="pd-tab" role="tab" id="tab-secretaria" aria-controls="panel-secretaria" aria-selected="false" tabindex="-1">Conserjería</button>
         </div>
         <div class="pd-tabpanel" role="tabpanel" id="panel-alumno" aria-labelledby="tab-alumno">
           <p>Mensajería interna, perfil, horario, asignaturas y faltas, calificaciones, expediente y datos del centro.</p>
@@ -314,84 +351,84 @@
           <p>Gestión completa del sistema: centros, usuarios, cursos, asignaturas, aulas y sus relaciones.</p>
           <div class="gallery">
             <figure>
-              <img src="../../assets/img/pentanet/admin/inicio-admin.webp" alt="Administrador — Inicio" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/inicio-admin.webp" alt="Dirección — Inicio" loading="lazy" width="1600" height="1000">
               <figcaption>Inicio</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/centros-admin.webp" alt="Administrador — Centros" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/centros-admin.webp" alt="Dirección — Centros" loading="lazy" width="1600" height="1000">
               <figcaption>Centros</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/creacion-centro.webp" alt="Administrador — Crear centro" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/creacion-centro.webp" alt="Dirección — Crear centro" loading="lazy" width="1600" height="1000">
               <figcaption>Crear centro</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/listado-users.webp" alt="Administrador — Usuarios" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/listado-users.webp" alt="Dirección — Usuarios" loading="lazy" width="1600" height="1000">
               <figcaption>Usuarios</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/creacion-usuario.webp" alt="Administrador — Crear usuario" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/creacion-usuario.webp" alt="Dirección — Crear usuario" loading="lazy" width="1600" height="1000">
               <figcaption>Crear usuario</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/aulas-admin.webp" alt="Administrador — Aulas" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/aulas-admin.webp" alt="Dirección — Aulas" loading="lazy" width="1600" height="1000">
               <figcaption>Aulas</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/creacion-aula.webp" alt="Administrador — Crear aula" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/creacion-aula.webp" alt="Dirección — Crear aula" loading="lazy" width="1600" height="1000">
               <figcaption>Crear aula</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/asignaturas.webp" alt="Administrador — Asignaturas" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/asignaturas.webp" alt="Dirección — Asignaturas" loading="lazy" width="1600" height="1000">
               <figcaption>Asignaturas</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/asignatura-curso-relacion.webp" alt="Administrador — Relación asignatura-curso" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/asignatura-curso-relacion.webp" alt="Dirección — Relación asignatura-curso" loading="lazy" width="1600" height="1000">
               <figcaption>Relación asignatura-curso</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/asignatura-alumno-profe.webp" alt="Administrador — Alumnos y profesores por asignatura" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/asignatura-alumno-profe.webp" alt="Dirección — Alumnos y profesores por asignatura" loading="lazy" width="1600" height="1000">
               <figcaption>Alumnos y profesores por asignatura</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/cursos-admin.webp" alt="Administrador — Cursos" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/cursos-admin.webp" alt="Dirección — Cursos" loading="lazy" width="1600" height="1000">
               <figcaption>Cursos</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/user-admin.webp" alt="Administrador — Detalle de usuario" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/user-admin.webp" alt="Dirección — Detalle de usuario" loading="lazy" width="1600" height="1000">
               <figcaption>Detalle de usuario</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/info-genera.webp" alt="Administrador — Información general" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/info-genera.webp" alt="Dirección — Información general" loading="lazy" width="1600" height="1000">
               <figcaption>Información general</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/info-alumno.webp" alt="Administrador — Ficha de alumno" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/info-alumno.webp" alt="Dirección — Ficha de alumno" loading="lazy" width="1600" height="1000">
               <figcaption>Ficha de alumno</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/admin/info-profe.webp" alt="Administrador — Ficha de profesor" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/admin/info-profe.webp" alt="Dirección — Ficha de profesor" loading="lazy" width="1600" height="1000">
               <figcaption>Ficha de profesor</figcaption>
             </figure>
           </div>
         </div>
         <div class="pd-tabpanel" role="tabpanel" id="panel-secretaria" aria-labelledby="tab-secretaria" hidden>
-          <p>Motor de reservas de aulas en tiempo real: ocupación, nuevas reservas, reservas activas e historial.</p>
+          <p>Gestión de las cabinas de estudio: ocupación, nuevas reservas, reservas activas e historial.</p>
           <div class="gallery">
             <figure>
-              <img src="../../assets/img/pentanet/secretaria/estado-cabinas.webp" alt="Secretaría — Estado de las cabinas" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/secretaria/estado-cabinas.webp" alt="Conserjería — Estado de las cabinas" loading="lazy" width="1600" height="1000">
               <figcaption>Estado de las cabinas</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/secretaria/hacer-reserva.webp" alt="Secretaría — Nueva reserva" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/secretaria/hacer-reserva.webp" alt="Conserjería — Nueva reserva" loading="lazy" width="1600" height="1000">
               <figcaption>Nueva reserva</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/secretaria/reservas-activas.webp" alt="Secretaría — Reservas activas" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/secretaria/reservas-activas.webp" alt="Conserjería — Reservas activas" loading="lazy" width="1600" height="1000">
               <figcaption>Reservas activas</figcaption>
             </figure>
             <figure>
-              <img src="../../assets/img/pentanet/secretaria/historial-reservas.webp" alt="Secretaría — Historial de reservas" loading="lazy" width="1600" height="1000">
+              <img src="../../assets/img/pentanet/secretaria/historial-reservas.webp" alt="Conserjería — Historial de reservas" loading="lazy" width="1600" height="1000">
               <figcaption>Historial de reservas</figcaption>
             </figure>
           </div>
@@ -408,7 +445,7 @@
       <div class="pd-next-contact">
         <div>
           <h2>¿Hablamos?</h2>
-          <p>Puedo enseñarte el proyecto en detalle o contarte cómo lo construí.</p>
+          <p>Puedes probar la demo por tu cuenta, o te enseño el proyecto en detalle y te cuento cómo lo construí.</p>
         </div>
         <a class="btn-outline" href="../../index.html#contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg> Contactar</a>
       </div>

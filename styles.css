@@ -1048,6 +1048,8 @@ html[data-theme="dark"] .tags-inline .tech-jwt::before { background: #e5e7eb; }
 .tech-mysql  { --tech: #00618a; background: #00618a; color: #fff; border-color: rgba(0,97,138,0.18); }
 .tech-jwt    { --tech: #000000; background: #000000; color: #fff; border-color: rgba(0,0,0,0.18); }
 .tech-rest   { --tech: #4f46e5; background: #4f46e5; color: #fff; border-color: color-mix(in srgb, var(--accent) 18%, transparent); }
+.tech-docker { --tech: #2496ed; background: #2496ed; color: #111; border-color: rgba(36,150,237,0.18); }
+.tech-flyway { --tech: #cc0200; background: #cc0200; color: #fff; border-color: rgba(204,2,0,0.18); }
 .tech-websocket { --tech: #ec4899; background: #ec4899; color: #111; border-color: rgba(236,72,153,0.18); }
 
 /* Móvil */
